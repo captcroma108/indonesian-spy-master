@@ -1,0 +1,4682 @@
+{
+  "1": {
+    "lesson": 1,
+    "title": "First Encounters & Language Ability (पहला संपर्क और भाषा समझ)",
+    "audio": "2_5420097699322022172.mp3",
+    "dialogue": [
+      {
+        "speaker": "A (American)",
+        "en": "Excuse me, miss!",
+        "indo": "Permisi, Nona!",
+        "hi": "पेरमीसी, नोना!"
+      },
+      {
+        "speaker": "B (Indonesian)",
+        "en": "Yes, sir?",
+        "indo": "Ya, Pak?",
+        "hi": "या, पाक?"
+      },
+      {
+        "speaker": "A (American)",
+        "en": "Do you understand English?",
+        "indo": "Apakah Anda mengerti bahasa Inggris?",
+        "hi": "आपाकाह आन्दा मंगेरती बाहासा इंग्रिस?"
+      },
+      {
+        "speaker": "B (Indonesian)",
+        "en": "No, I don't understand.",
+        "indo": "Tidak, saya tidak mengerti.",
+        "hi": "तीदाक, साया तीदाक मंगेरती."
+      },
+      {
+        "speaker": "A (American)",
+        "en": "I understand a little Indonesian.",
+        "indo": "Saya mengerti sedikit bahasa Indonesia.",
+        "hi": "साया मंगेरती सेदीकीत बाहासा इंडोनेशिया."
+      },
+      {
+        "speaker": "B (Indonesian)",
+        "en": "Are you an American?",
+        "indo": "Apakah Anda orang Amerika?",
+        "hi": "आपाकाह आन्दा ओरांग अमेरीका?"
+      },
+      {
+        "speaker": "A (American)",
+        "en": "Yes, miss.",
+        "indo": "Ya, Nona.",
+        "hi": "या, नोना."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Excuse me (ध्यान आकर्षित करना)",
+        "indo": "Permisi",
+        "hi": "पेरमीसी",
+        "hook": "Permisi = Excuse me / Maaf."
+      },
+      {
+        "en": "Sir / Mr.",
+        "indo": "Pak (Bapak)",
+        "hi": "पाक (बापाक)",
+        "hook": "Pak = बड़ों और आदरणीय पुरुषों के लिए संबोधन."
+      },
+      {
+        "en": "Miss / Young lady",
+        "indo": "Nona",
+        "hi": "नोना",
+        "hook": "Nona = युवा महिला / कुंवारी लड़की."
+      },
+      {
+        "en": "Do you understand?",
+        "indo": "Apakah Anda mengerti?",
+        "hi": "आपाकाह आन्दा मंगेरती?",
+        "hook": "Mengerti = समझना. Apakah = क्या."
+      },
+      {
+        "en": "English language",
+        "indo": "Bahasa Inggris",
+        "hi": "बाहासा इंग्रिस",
+        "hook": "Bahasa = संस्कृत भाषा."
+      },
+      {
+        "en": "I (Self)",
+        "indo": "Saya",
+        "hi": "साया",
+        "hook": "Saya = विनम्र और मानक 'मैं'."
+      },
+      {
+        "en": "No / Not",
+        "indo": "Tidak",
+        "hi": "तीदाक",
+        "hook": "Tidak = क्रिया और विशेषण का निषेध."
+      },
+      {
+        "en": "A little",
+        "indo": "Sedikit",
+        "hi": "सेदीकीत",
+        "hook": "Sedikit = थोड़ा सा."
+      },
+      {
+        "en": "Person / People",
+        "indo": "Orang",
+        "hi": "ओरांग",
+        "hook": "Orang = व्यक्ति / इंसान."
+      },
+      {
+        "en": "American",
+        "indo": "Amerika",
+        "hi": "अमेरीका",
+        "hook": "Orang Amerika = अमेरिकी नागरिक."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What is 'Excuse me' in Indonesian?",
+        "options": [
+          "Permisi",
+          "Terima kasih",
+          "Selamat",
+          "Silakan"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What does 'Mengerti' mean?",
+        "options": [
+          "To eat",
+          "To understand",
+          "To speak",
+          "To go"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'A little'?",
+        "options": [
+          "Banyak",
+          "Mahal",
+          "Sedikit",
+          "Bagus"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Which word means 'Language'?",
+        "options": [
+          "Orang",
+          "Bicara",
+          "Kata",
+          "Bahasa"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "A - da",
+        "meaning": "There is / Have"
+      },
+      {
+        "word": "A - pa",
+        "meaning": "What"
+      },
+      {
+        "word": "I - ni",
+        "meaning": "This"
+      },
+      {
+        "word": "I - tu",
+        "meaning": "That"
+      },
+      {
+        "word": "Sa - ya",
+        "meaning": "I / Me"
+      },
+      {
+        "word": "Pa - gi",
+        "meaning": "Morning"
+      },
+      {
+        "word": "Si - ang",
+        "meaning": "Midday"
+      },
+      {
+        "word": "Ma - lam",
+        "meaning": "Night"
+      },
+      {
+        "word": "Ba - ha - sa",
+        "meaning": "Language"
+      },
+      {
+        "word": "Ti - dak",
+        "meaning": "No / Not"
+      }
+    ]
+  },
+  "2": {
+    "lesson": 2,
+    "title": "Greetings, Well-being & Location (कुशल-मंगल और दिशा ज्ञान)",
+    "audio": "2_5420097699322022174.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Good morning, sir!",
+        "indo": "Selamat pagi, Pak!",
+        "hi": "सलामात पागी, पाक!"
+      },
+      {
+        "speaker": "B",
+        "en": "Good morning! How are you?",
+        "indo": "Selamat pagi! Apa kabar?",
+        "hi": "सलामात पागी! आपा काबार?"
+      },
+      {
+        "speaker": "A",
+        "en": "Good news (I am fine), thank you.",
+        "indo": "Kabar baik, terima kasih.",
+        "hi": "काबार बाईक, तरीमा कासीह."
+      },
+      {
+        "speaker": "A",
+        "en": "Where is Jalan Thamrin?",
+        "indo": "Di mana Jalan Thamrin?",
+        "hi": "दी माना जालान थामरिन?"
+      },
+      {
+        "speaker": "B",
+        "en": "It's over there, sir.",
+        "indo": "Di sana, Pak.",
+        "hi": "दी साना, पाक."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Good morning",
+        "indo": "Selamat pagi",
+        "hi": "सलामात पागी",
+        "hook": "Pagi = सुबह."
+      },
+      {
+        "en": "How are you? (What news?)",
+        "indo": "Apa kabar?",
+        "hi": "आपा काबार?",
+        "hook": "Kabar = ख़बर (News)."
+      },
+      {
+        "en": "Fine / Good",
+        "indo": "Baik",
+        "hi": "बाईक",
+        "hook": "Kabar baik = अच्छी ख़बर."
+      },
+      {
+        "en": "Thank you",
+        "indo": "Terima kasih",
+        "hi": "तरीमा कासीह",
+        "hook": "Terima = स्वीकार करना, Kasih = प्रेम."
+      },
+      {
+        "en": "Where (at where)",
+        "indo": "Di mana",
+        "hi": "दी माना",
+        "hook": "Di = में/पर, Mana = कहाँ."
+      },
+      {
+        "en": "Road / Street",
+        "indo": "Jalan",
+        "hi": "जालान",
+        "hook": "Jalan = चलना या सड़क."
+      },
+      {
+        "en": "Over there",
+        "indo": "Di sana",
+        "hi": "दी साना",
+        "hook": "Di sana = वहाँ (दूर)."
+      },
+      {
+        "en": "Over here",
+        "indo": "Di sini",
+        "hi": "दी सीनी",
+        "hook": "Di sini = यहाँ (पास)."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "How do you ask 'How are you?'",
+        "options": [
+          "Apa kabar?",
+          "Di mana?",
+          "Siapa nama?",
+          "Mau apa?"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'Thank you' in Indonesian?",
+        "options": [
+          "Sama-sama",
+          "Terima kasih",
+          "Permisi",
+          "Selamat"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "What does 'Di mana' mean?",
+        "options": [
+          "How much",
+          "Who",
+          "Where",
+          "When"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is 'Street / Road'?",
+        "options": [
+          "Pasar",
+          "Hotel",
+          "Rumah",
+          "Jalan"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Ka - bar",
+        "meaning": "News"
+      },
+      {
+        "word": "Ba - ik",
+        "meaning": "Good / Well"
+      },
+      {
+        "word": "Sa - na",
+        "meaning": "There"
+      },
+      {
+        "word": "Si - ni",
+        "meaning": "Here"
+      },
+      {
+        "word": "Ja - lan",
+        "meaning": "Road / Walk"
+      },
+      {
+        "word": "Te - ri - ma",
+        "meaning": "Receive / Accept"
+      },
+      {
+        "word": "Ka - sih",
+        "meaning": "Affection / Love"
+      },
+      {
+        "word": "No - na",
+        "meaning": "Miss"
+      },
+      {
+        "word": "Ba - pak",
+        "meaning": "Father / Sir"
+      },
+      {
+        "word": "Ma - na",
+        "meaning": "Where / Which"
+      }
+    ]
+  },
+  "3": {
+    "lesson": 3,
+    "title": "Food, Drink & Dining Out (खान-पान और रेस्टोरेंट)",
+    "audio": "2_5420097699322022178.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Are you hungry?",
+        "indo": "Apakah Anda lapar?",
+        "hi": "आपाकाह आन्दा लापार?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I want to eat something.",
+        "indo": "Ya, saya mau makan sesuatu.",
+        "hi": "या, साया माउ माकान सेसुआतू."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do you want to eat?",
+        "indo": "Mau makan di mana?",
+        "hi": "माउ माकान दी माना?"
+      },
+      {
+        "speaker": "B",
+        "en": "At the hotel restaurant.",
+        "indo": "Di restoran hotel.",
+        "hi": "दी रेस्टोरान होटेल."
+      },
+      {
+        "speaker": "A",
+        "en": "Do you want to drink tea or coffee?",
+        "indo": "Mau minum teh atau kopi?",
+        "hi": "माउ मिनुम तेह आताउ कोपी?"
+      },
+      {
+        "speaker": "B",
+        "en": "I want drinking water, please.",
+        "indo": "Saya mau minum air.",
+        "hi": "साया माउ मिनुम आइर."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Want / Will (Magical Word)",
+        "indo": "Mau",
+        "hi": "माउ",
+        "hook": "Mau = मुझे चाहिए / मैं चाहता हूँ."
+      },
+      {
+        "en": "To eat",
+        "indo": "Makan",
+        "hi": "माकान",
+        "hook": "Makan = खाना."
+      },
+      {
+        "en": "To drink",
+        "indo": "Minum",
+        "hi": "मिनुम",
+        "hook": "Minum = पीना."
+      },
+      {
+        "en": "Water",
+        "indo": "Air",
+        "hi": "आइर",
+        "hook": "Air = पानी."
+      },
+      {
+        "en": "Tea",
+        "indo": "Teh",
+        "hi": "तेह",
+        "hook": "Teh = चाय."
+      },
+      {
+        "en": "Coffee",
+        "indo": "Kopi",
+        "hi": "कोपी",
+        "hook": "Kopi = कॉफ़ी."
+      },
+      {
+        "en": "Or",
+        "indo": "Atau",
+        "hi": "आताउ",
+        "hook": "Atau = या (Either/Or)."
+      },
+      {
+        "en": "Hungry",
+        "indo": "Lapar",
+        "hi": "लापार",
+        "hook": "Lapar = भूखा."
+      },
+      {
+        "en": "Something",
+        "indo": "Sesuatu",
+        "hi": "सेसुआतू",
+        "hook": "Sesuatu = कुछ."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What is 'To drink'?",
+        "options": [
+          "Minum",
+          "Makan",
+          "Mau",
+          "Tidur"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'Water' in Indonesian?",
+        "options": [
+          "Susu",
+          "Air",
+          "Teh",
+          "Kopi"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Which word means 'To eat'?",
+        "options": [
+          "Beli",
+          "Jalan",
+          "Makan",
+          "Minum"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Atau' mean?",
+        "options": [
+          "And",
+          "With",
+          "Because",
+          "Or"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Ma - kan",
+        "meaning": "Eat"
+      },
+      {
+        "word": "Mi - num",
+        "meaning": "Drink"
+      },
+      {
+        "word": "A - ir",
+        "meaning": "Water"
+      },
+      {
+        "word": "Ko - pi",
+        "meaning": "Coffee"
+      },
+      {
+        "word": "A - tau",
+        "meaning": "Or"
+      },
+      {
+        "word": "La - par",
+        "meaning": "Hungry"
+      },
+      {
+        "word": "Re - sto - ran",
+        "meaning": "Restaurant"
+      },
+      {
+        "word": "Ho - tel",
+        "meaning": "Hotel"
+      },
+      {
+        "word": "Teh",
+        "meaning": "Tea"
+      },
+      {
+        "word": "Mau",
+        "meaning": "Want"
+      }
+    ]
+  },
+  "4": {
+    "lesson": 4,
+    "title": "Shopping & Money (Belanja & Uang)",
+    "audio": "2_5420097699322022185.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 4: Shopping & Money (Belanja & Uang)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "5": {
+    "lesson": 5,
+    "title": "Bargaining & Prices (Tawar Menawar & Harga)",
+    "audio": "2_5420097699322022254.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 5: Bargaining & Prices (Tawar Menawar & Harga)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "6": {
+    "lesson": 6,
+    "title": "Time, Hours & Clock (Jam & Waktu)",
+    "audio": "2_5420097699322022255.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 6: Time, Hours & Clock (Jam & Waktu)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "7": {
+    "lesson": 7,
+    "title": "Daily Appointments (Janji & Hari)",
+    "audio": "2_5420097699322022257.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 7: Daily Appointments (Janji & Hari)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "8": {
+    "lesson": 8,
+    "title": "Taxi & Street Movement (Ojek & Taksi)",
+    "audio": "2_5420097699322022259.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 8: Taxi & Street Movement (Ojek & Taksi)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "9": {
+    "lesson": 9,
+    "title": "Transit, Train & Airport (Stasiun & Bandara)",
+    "audio": "2_5420097699322022261.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 9: Transit, Train & Airport (Stasiun & Bandara)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "10": {
+    "lesson": 10,
+    "title": "Family, Social Relations (Keluarga & Teman)",
+    "audio": "2_5420097699322022262.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 10: Family, Social Relations (Keluarga & Teman)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "11": {
+    "lesson": 11,
+    "title": "Meeting People & Work (Pertemuan & Kerja)",
+    "audio": "2_5420097699322022263.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 11: Meeting People & Work (Pertemuan & Kerja)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "12": {
+    "lesson": 12,
+    "title": "Hotel Check-in & Rooms (Kamar Hotel)",
+    "audio": "2_5420097699322022265.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 12: Hotel Check-in & Rooms (Kamar Hotel)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "13": {
+    "lesson": 13,
+    "title": "Dining Warung Specialties (Makanan Lokal)",
+    "audio": "2_5420097699322022267.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 13: Dining Warung Specialties (Makanan Lokal)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "14": {
+    "lesson": 14,
+    "title": "Ordering Specific Quantities (Jumlah & Porsi)",
+    "audio": "2_5420097699322022268.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 14: Ordering Specific Quantities (Jumlah & Porsi)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "15": {
+    "lesson": 15,
+    "title": "Directions, Left & Right (Kiri & Kanan)",
+    "audio": "2_5420097699322022271.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 15: Directions, Left & Right (Kiri & Kanan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "16": {
+    "lesson": 16,
+    "title": "Distance & Kilometers (Jarak & Kilometer)",
+    "audio": "2_5420097699322022272.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 16: Distance & Kilometers (Jarak & Kilometer)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "17": {
+    "lesson": 17,
+    "title": "Weather, Rain & Travel (Cuaca & Hujan)",
+    "audio": "2_5420097699322022273.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 17: Weather, Rain & Travel (Cuaca & Hujan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "18": {
+    "lesson": 18,
+    "title": "Weekend Plans & Trips (Akhir Pekan)",
+    "audio": "2_5420097699322022276.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 18: Weekend Plans & Trips (Akhir Pekan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "19": {
+    "lesson": 19,
+    "title": "Expressing Needs & Urgent Tasks (Kebutuhan Penting)",
+    "audio": "2_5420097699322022277.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 19: Expressing Needs & Urgent Tasks (Kebutuhan Penting)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "20": {
+    "lesson": 20,
+    "title": "Medical Help & Pharmacy (Apotek & Sakit)",
+    "audio": "2_5420097699322022278.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 20: Medical Help & Pharmacy (Apotek & Sakit)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "21": {
+    "lesson": 21,
+    "title": "Money Exchange & ATM (Tukar Uang & Bank)",
+    "audio": "2_5420097699322022283.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 21: Money Exchange & ATM (Tukar Uang & Bank)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "22": {
+    "lesson": 22,
+    "title": "Shopping Clothes & Sizes (Ukuran Baju)",
+    "audio": "2_5420097699322022285.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 22: Shopping Clothes & Sizes (Ukuran Baju)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "23": {
+    "lesson": 23,
+    "title": "Expressing Likes & Opinions (Suka & Pendapat)",
+    "audio": "2_5420097699322022286.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 23: Expressing Likes & Opinions (Suka & Pendapat)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "24": {
+    "lesson": 24,
+    "title": "Telephone & Mobile Chat (Telepon & WhatsApp)",
+    "audio": "2_5420097699322022289.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 24: Telephone & Mobile Chat (Telepon & WhatsApp)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "25": {
+    "lesson": 25,
+    "title": "Household & Neighborhood (Rumah & Tetangga)",
+    "audio": "2_5420097699322022337.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 25: Household & Neighborhood (Rumah & Tetangga)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "26": {
+    "lesson": 26,
+    "title": "Indonesian Customs & Etiquette (Sopan Santun)",
+    "audio": "2_5420097699322022338.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 26: Indonesian Customs & Etiquette (Sopan Santun)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "27": {
+    "lesson": 27,
+    "title": "Slang vs Formal Speech (Bahasa Gaul)",
+    "audio": "2_5420097699322022340.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 27: Slang vs Formal Speech (Bahasa Gaul)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "28": {
+    "lesson": 28,
+    "title": "Business & Work Collaboration (Kerjasama)",
+    "audio": "2_5420097699322022347.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 28: Business & Work Collaboration (Kerjasama)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "29": {
+    "lesson": 29,
+    "title": "Expressing Feelings & Emotions (Perasaan)",
+    "audio": "2_5420097699322022352.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 29: Expressing Feelings & Emotions (Perasaan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "30": {
+    "lesson": 30,
+    "title": "Deep Master Fluency Review (Kefasihan Total)",
+    "audio": "2_5420097699322022354.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 30: Deep Master Fluency Review (Kefasihan Total)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  }
+}

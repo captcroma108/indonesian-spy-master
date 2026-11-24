@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Pixel APK UI Design Studio (4 Concepts)</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-desktop: #060913;
+    --panel-bg: #0d1322;
+    --border: #1e293b;
+    --accent: #38bdf8;
+    --gold: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg-desktop);
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  /* Studio Top Bar */
+  .studio-bar {
+    background: #090e1a;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .studio-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .studio-brand h1 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .badge-pixel {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 12px;
+    letter-spacing: 0.05em;
+  }
+
+  /* Main Workspace Layout */
+  .studio-workspace {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 61px);
+    overflow: hidden;
+  }
+
+  /* Left Controls & Theme Selector */
+  .controls-sidebar {
+    width: 380px;
+    background: var(--panel-bg);
+    border-right: 1px solid var(--border);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  /* Theme Cards */
+  .theme-card {
+    background: #111a2e;
+    border: 2px solid #1e293b;
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+  }
+  .theme-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+  }
+  .theme-card.active {
+    border-color: #38bdf8;
+    background: #13223f;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+  }
+  .theme-card.active::after {
+    content: 'ACTIVE VIEW';
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: #0284c7;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 8px;
+  }
+  .theme-title {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .theme-desc {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    line-height: 1.4;
+  }
+  .theme-tags {
+    display: flex;
+    gap: 6px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+  }
+  .theme-tag {
+    background: #1e293b;
+    color: #cbd5e1;
+    font-size: 0.68rem;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  /* Center Device Canvas */
+  .canvas-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(circle at center, #0f172a 0%, #030712 100%);
+    overflow-y: auto;
+    position: relative;
+  }
+
+  /* Realistic Google Pixel Frame Mockup */
+  .pixel-device {
+    width: 395px;
+    height: 820px;
+    background: #000;
+    border-radius: 50px;
+    box-shadow: 0 0 0 10px #1e293b, 0 0 0 13px #0f172a, 0 25px 60px rgba(0,0,0,0.9);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+
+  /* Pixel Punch Hole Camera */
+  .pixel-camera {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: inset 0 0 2px #334155;
+  }
+
+  /* Pixel Status Bar */
+  .pixel-status-bar {
+    height: 40px;
+    padding: 10px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 999;
+    background: transparent;
+  }
+
+  /* Pixel Screen Container (Where the 4 UI Designs Live) */
+  .pixel-screen {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    scrollbar-width: none;
+  }
+  .pixel-screen::-webkit-scrollbar { display: none; }
+
+  /* Pixel Navigation Gesture Bar */
+  .pixel-nav-bar {
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: transparent;
+  }
+  .pixel-home-indicator {
+    width: 110px;
+    height: 4px;
+    background: #cbd5e1;
+    border-radius: 4px;
+    opacity: 0.6;
+  }
+
+  /* ========================================================
+     THEME 1: MATERIAL YOU (Google Pixel Native Android 14)
+     ======================================================== */
+  .theme-material-you {
+    --m-bg: #141218;
+    --m-surface: #211f26;
+    --m-primary: #d0bcff;
+    --m-on-primary: #381e72;
+    --m-container: #4f378b;
+    --m-text: #e6e1e5;
+    background: var(--m-bg);
+    color: var(--m-text);
+  }
+  .theme-material-you .app-header {
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .theme-material-you .search-bar {
+    background: #2b2930;
+    border-radius: 28px;
+    padding: 12px 18px;
+    margin: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    color: #cac4d0;
+  }
+  .theme-material-you .pill-scroll {
+    display: flex;
+    gap: 8px;
+    padding: 6px 16px;
+    overflow-x: auto;
+  }
+  .theme-material-you .filter-chip {
+    background: #2b2930;
+    color: #e6e1e5;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .theme-material-you .filter-chip.active {
+    background: #d0bcff;
+    color: #381e72;
+  }
+  .theme-material-you .hero-card {
+    background: #4f378b;
+    color: #fff;
+    margin: 12px 16px;
+    padding: 20px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .theme-material-you .word-card-item {
+    background: #211f26;
+    margin: 8px 16px;
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .theme-material-you .bottom-dock {
+    margin-top: auto;
+    background: #1d1b20;
+    padding: 12px 16px 8px 16px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #36343b;
+  }
+  .theme-material-you .dock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    color: #cac4d0;
+    cursor: pointer;
+  }
+  .theme-material-you .dock-item.active {
+    color: #d0bcff;
+    font-weight: 800;
+  }
+
+  /* ========================================================
+     THEME 2: TACTICAL CYBER OPS (Military / CIA Spy Terminal)
+     ======================================================== */
+  .theme-tactical-ops {
+    --t-bg: #030712;
+    --t-card: #080e1e;
+    --t-cyan: #06b6d4;
+    --t-amber: #f59e0b;
+    background: var(--t-bg);
+    color: #e2e8f0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .theme-tactical-ops .tactical-header {
+    background: #020617;
+    border-bottom: 1px solid #0e7490;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .theme-tactical-ops .radar-box {
+    margin: 12px 16px;
+    background: linear-gradient(180deg, rgba(6,182,212,0.1), transparent);
+    border: 1px solid #0891b2;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .theme-tactical-ops .hud-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 16px;
+  }
+  .theme-tactical-ops .hud-card {
+    background: #091224;
+    border-left: 4px solid #06b6d4;
+    border-top: 1px solid #162544;
+    border-right: 1px solid #162544;
+    border-bottom: 1px solid #162544;
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ========================================================
+     THEME 3: GAMIFIED DUO (FluentFlow High Dopamine)
+     ======================================================== */
+  .theme-gamified-duo {
+    --g-bg: #0f172a;
+    --g-card: #1e293b;
+    --g-green: #22c55e;
+    --g-gold: #f59e0b;
+    background: var(--g-bg);
+    color: #fff;
+  }
+  .theme-gamified-duo .gamified-header {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #334155;
+  }
+  .theme-gamified-duo .streak-pill {
+    background: #78350f;
+    color: #fde68a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .theme-gamified-duo .xp-banner {
+    background: linear-gradient(135deg, #15803d, #16a34a);
+    margin: 12px 16px;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 8px 0 #14532d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .theme-gamified-duo .game-card {
+    background: #1e293b;
+    margin: 10px 16px;
+    padding: 16px;
+    border-radius: 18px;
+    border-bottom: 4px solid #0f172a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.1s;
+  }
+  .theme-gamified-duo .game-card:active {
+    transform: translateY(3px);
+    border-bottom-width: 1px;
+  }
+
+  /* ========================================================
+     THEME 4: PIMSLEUR EXECUTIVE (Audio-First Podcast Player)
+     ======================================================== */
+  .theme-pimsleur-audio {
+    --p-bg: #050508;
+    --p-surface: #12121a;
+    --p-accent: #6366f1;
+    background: var(--p-bg);
+    color: #fff;
+  }
+  .theme-pimsleur-audio .exec-player-hero {
+    margin: 16px;
+    background: linear-gradient(145deg, #1e1b4b, #0f172a);
+    border-radius: 26px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+  }
+  .theme-pimsleur-audio .vinyl-disc {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #312e81 0%, #1e1b4b 60%, #000 100%);
+    border: 4px solid #4338ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+    animation: rotateVinyl 12s linear infinite;
+  }
+  @keyframes rotateVinyl {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .theme-pimsleur-audio .audio-wave-bar {
+    width: 100%;
+    height: 4px;
+    background: #312e81;
+    border-radius: 2px;
+    position: relative;
+    margin: 16px 0 10px 0;
+  }
+  .theme-pimsleur-audio .audio-progress {
+    width: 45%;
+    height: 100%;
+    background: #818cf8;
+    border-radius: 2px;
+  }
+  .theme-pimsleur-audio .exec-tools-tabs {
+    display: flex;
+    margin: 0 16px 14px 16px;
+    background: #12121c;
+    border-radius: 12px;
+    padding: 4px;
+  }
+  .theme-pimsleur-audio .tool-pill {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    border-radius: 8px;
+  }
+  .theme-pimsleur-audio .tool-pill.active {
+    background: #4f46e5;
+    color: #fff;
+  }
+
+  .devanagari {
+    font-family: 'Noto Sans Devanagari', sans-serif !important;
+  }
+</style>
+</head>
+<body>
+
+<!-- Studio Top Navigation -->
+<header class="studio-bar">
+  <div class="studio-brand">
+    <h1>📱 Google Pixel Android Studio</h1>
+    <span class="badge-pixel">PIXEL 8 PRO EMULATOR</span>
+  </div>
+  <div style="font-size:0.85rem; color:#94a3b8;">
+    Tap any design on the left to preview live on the Pixel device
+  </div>
+</header>
+
+<!-- Main Studio Workspace -->
+<div class="studio-workspace">
+  
+  <!-- Left Controls: 4 Concepts Selector -->
+  <aside class="controls-sidebar">
+    <div class="section-title">Select Android Concept:</div>
+
+    <!-- Theme 1 -->
+    <div class="theme-card active" onclick="switchTheme(1)">
+      <div class="theme-title">1. Material You (Pixel Native)</div>
+      <div class="theme-desc">Google's official Android 14/15 design system. M3 dynamic pills, bottom navigation dock, soft pastel containers, and smooth touch curves.</div>
+      <div class="theme-tags">
+        <span class="theme-tag">Android 14 M3</span>
+        <span class="theme-tag">Bottom Dock</span>
+        <span class="theme-tag">Google Pure</span>
+      </div>
+    </div>
+
+    <!-- Theme 2 -->
+    <div class="theme-card" onclick="switchTheme(2)">
+      <div class="theme-title">2. Tactical Cyber Ops (CIA Terminal)</div>
+      <div class="theme-desc">High-contrast stealth OLED black interface with neon cyan/amber telemetry. Designed for nighttime mission immersion and military language drills.</div>
+      <div class="theme-tags">
+        <span class="theme-tag">OLED Black</span>
+        <span class="theme-tag">Cyber HUD</span>
+        <span class="theme-tag">Military Vibe</span>
+      </div>
+    </div>
+
+    <!-- Theme 3 -->
+    <div class="theme-card" onclick="switchTheme(3)">
+      <div class="theme-title">3. Gamified Duo (FluentFlow)</div>
+      <div class="theme-desc">Fun, dopamine-driven gamification style. XP reward counters, streak fire badges, tactile 3D clickable card actions, and progress milestones.</div>
+      <div class="theme-tags">
+        <span class="theme-tag">Gamified</span>
+        <span class="theme-tag">Duo XP Streaks</span>
+        <span class="theme-tag">Tactile 3D</span>
+      </div>
+    </div>
+
+    <!-- Theme 4 -->
+    <div class="theme-card" onclick="switchTheme(4)">
+      <div class="theme-title">4. Pimsleur Executive (Audio Deck)</div>
+      <div class="theme-desc">Audible & Spotify Masterclass aesthetic. Prominent spinning audio disc, waveform timeline, hands-free spoken drills, and frosted glass cards.</div>
+      <div class="theme-tags">
+        <span class="theme-tag">Podcast Mode</span>
+        <span class="theme-tag">Audio-First</span>
+        <span class="theme-tag">Hands-Free</span>
+      </div>
+    </div>
+
+    <div style="margin-top:auto; padding-top:16px; border-top:1px solid #1e293b; font-size:0.75rem; color:#64748b; line-height:1.5;">
+      💡 <b>Antigravity Note:</b> Whichever design you choose, we will compile it directly into your standalone Android APK for 100% offline usage on real phones.
+    </div>
+  </aside>
+
+  <!-- Center Canvas: Google Pixel Frame Mockup -->
+  <main class="canvas-area">
+    
+    <div class="pixel-device">
+      <!-- Punch Hole Camera -->
+      <div class="pixel-camera"></div>
+
+      <!-- Top Android Status Bar -->
+      <div class="pixel-status-bar" id="statusBar">
+        <span>09:41</span>
+        <div style="display:flex; gap:6px; align-items:center;">
+          <span>5G</span>
+          <span>100%</span>
+        </div>
+      </div>
+
+      <!-- Dynamic Screen Content -->
+      <div class="pixel-screen theme-material-you" id="pixelScreen">
+        <!-- Rendered dynamically by switchTheme() -->
+      </div>
+
+      <!-- Pixel Gesture Bar -->
+      <div class="pixel-nav-bar">
+        <div class="pixel-home-indicator"></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+// Mock Content for the 4 Concepts
+const concepts = {
+  1: {
+    className: 'theme-material-you',
+    html: `
+      <div class="app-header">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.3rem;">🇮🇩</span>
+          <div>
+            <div style="font-weight:800; font-size:1rem; color:#fff;">Indonesian Master</div>
+            <div style="font-size:0.7rem; color:#d0bcff;">Day 1 of 30 • Survival Reflex</div>
+          </div>
+        </div>
+        <div style="width:34px; height:34px; border-radius:50%; background:#4f378b; display:flex; justify-content:center; align-items:center; font-size:0.85rem; font-weight:800;">🇮🇳</div>
+      </div>
+
+      <div class="search-bar">
+        <span>🔍 Search 100 Daily Phrases...</span>
+        <span style="font-size:0.75rem; color:#d0bcff;">Day 1 ▾</span>
+      </div>
+
+      <div class="pill-scroll">
+        <span class="filter-chip active">⚡ All Waves (100)</span>
+        <span class="filter-chip">Wave 1 (1-20)</span>
+        <span class="filter-chip">Wave 2 (21-40)</span>
+        <span class="filter-chip">Wave 3 (41-60)</span>
+      </div>
+
+      <div class="hero-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:0.75rem; font-weight:800; color:#d0bcff;">SANSKRIT POWER HOOK</span>
+          <span style="background:rgba(255,255,255,0.15); padding:2px 8px; border-radius:10px; font-size:0.68rem;">Day 1</span>
+        </div>
+        <div style="font-size:1.05rem; font-weight:800;">'Nama' = नाम • 'Sama-sama' = समान</div>
+        <div style="font-size:0.75rem; opacity:0.85;">'MAU' = sabse jadui shabd (mujhe chahiye).</div>
+      </div>
+
+      <div style="padding:0 16px; font-size:0.8rem; font-weight:800; color:#d0bcff; margin-top:6px;">WAVE 1: MORNING RECON (20 PHRASES)</div>
+
+      <div class="word-card-item">
+        <div>
+          <div style="font-weight:800; font-size:1.05rem; color:#fff;">Selamat pagi</div>
+          <div class="devanagari" style="font-size:0.88rem; color:#d0bcff; margin-top:2px;">[ सलामात पागी ]</div>
+          <div style="font-size:0.78rem; color:#cac4d0; margin-top:4px;">Good morning (सुबह 6 से 11 बजे)</div>
+        </div>
+        <button style="width:42px; height:42px; border-radius:50%; background:#4f378b; color:#fff; border:none; font-size:1.1rem; cursor:pointer;">🔊</button>
+      </div>
+
+      <div class="word-card-item">
+        <div>
+          <div style="font-weight:800; font-size:1.05rem; color:#fff;">Selamat siang</div>
+          <div class="devanagari" style="font-size:0.88rem; color:#d0bcff; margin-top:2px;">[ सलामात सियांग ]</div>
+          <div style="font-size:0.78rem; color:#cac4d0; margin-top:4px;">Good afternoon (दोपहर 11 से 3 बजे)</div>
+        </div>
+        <button style="width:42px; height:42px; border-radius:50%; background:#4f378b; color:#fff; border:none; font-size:1.1rem; cursor:pointer;">🔊</button>
+      </div>
+
+      <div class="word-card-item">
+        <div>
+          <div style="font-weight:800; font-size:1.05rem; color:#fff;">Saya</div>
+          <div class="devanagari" style="font-size:0.88rem; color:#d0bcff; margin-top:2px;">[ साया ]</div>
+          <div style="font-size:0.78rem; color:#cac4d0; margin-top:4px;">I / Me (मैं / मेरा - Polite Standard)</div>
+        </div>
+        <button style="width:42px; height:42px; border-radius:50%; background:#4f378b; color:#fff; border:none; font-size:1.1rem; cursor:pointer;">🔊</button>
+      </div>
+
+      <!-- Material You Bottom Navigation Dock -->
+      <div class="bottom-dock">
+        <div class="dock-item active">
+          <span style="font-size:1.2rem;">⚡</span>
+          <span>Mission</span>
+        </div>
+        <div class="dock-item">
+          <span style="font-size:1.2rem;">🎙️</span>
+          <span>Pimsleur</span>
+        </div>
+        <div class="dock-item">
+          <span style="font-size:1.2rem;">📖</span>
+          <span>PDFs</span>
+        </div>
+        <div class="dock-item">
+          <span style="font-size:1.2rem;">💾</span>
+          <span>Offline</span>
+        </div>
+      </div>
+    `
+  },
+
+  2: {
+    className: 'theme-tactical-ops',
+    html: `
+      <div class="tactical-header">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="color:#06b6d4; font-weight:800;">SYS.OPS // 01</span>
+        </div>
+        <span style="background:rgba(6,182,212,0.15); color:#06b6d4; border:1px solid #0891b2; font-size:0.65rem; padding:3px 8px; border-radius:4px; font-weight:700;">ENCRYPTED</span>
+      </div>
+
+      <div class="radar-box">
+        <div>
+          <div style="color:#f59e0b; font-size:0.75rem; font-weight:700;">MISSION OBJECTIVE: DAY 01</div>
+          <div style="font-size:0.95rem; font-weight:800; color:#fff; margin-top:2px;">FIRST CONTACT & IDENTITY</div>
+          <div style="font-size:0.7rem; color:#94a3b8; margin-top:4px;">100 Tactical Audio Reflex Vectors</div>
+        </div>
+        <div style="font-size:1.5rem; color:#06b6d4;">📡</div>
+      </div>
+
+      <div style="padding:0 16px; display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+        <span style="color:#06b6d4; font-size:0.75rem; font-weight:700;">TELEMETRY: WAVE 1 [01-20]</span>
+        <span style="color:#94a3b8; font-size:0.7rem;">STATUS: READY</span>
+      </div>
+
+      <div class="hud-grid">
+        <div class="hud-card">
+          <div>
+            <div style="color:#06b6d4; font-size:0.68rem; font-weight:700;">VEC_01 // GREETING</div>
+            <div style="font-size:1.05rem; font-weight:800; color:#fff;">Selamat pagi</div>
+            <div class="devanagari" style="font-size:0.85rem; color:#38bdf8;">[ सलामात पागी ]</div>
+            <div style="font-size:0.75rem; color:#94a3b8; margin-top:2px;">Good morning (0600 - 1100 HRS)</div>
+          </div>
+          <button style="background:#0891b2; color:#fff; border:none; padding:8px 12px; border-radius:6px; font-size:0.8rem; font-weight:800; cursor:pointer;">PLAY</button>
+        </div>
+
+        <div class="hud-card">
+          <div>
+            <div style="color:#06b6d4; font-size:0.68rem; font-weight:700;">VEC_02 // GREETING</div>
+            <div style="font-size:1.05rem; font-weight:800; color:#fff;">Selamat siang</div>
+            <div class="devanagari" style="font-size:0.85rem; color:#38bdf8;">[ सलामात सियांग ]</div>
+            <div style="font-size:0.75rem; color:#94a3b8; margin-top:2px;">Good afternoon (1100 - 1500 HRS)</div>
+          </div>
+          <button style="background:#0891b2; color:#fff; border:none; padding:8px 12px; border-radius:6px; font-size:0.8rem; font-weight:800; cursor:pointer;">PLAY</button>
+        </div>
+
+        <div class="hud-card">
+          <div>
+            <div style="color:#06b6d4; font-size:0.68rem; font-weight:700;">VEC_03 // PRONOUN</div>
+            <div style="font-size:1.05rem; font-weight:800; color:#fff;">Nama saya...</div>
+            <div class="devanagari" style="font-size:0.85rem; color:#38bdf8;">[ नामा साया... ]</div>
+            <div style="font-size:0.75rem; color:#94a3b8; margin-top:2px;">My name is... (Sanskrit: नाम)</div>
+          </div>
+          <button style="background:#0891b2; color:#fff; border:none; padding:8px 12px; border-radius:6px; font-size:0.8rem; font-weight:800; cursor:pointer;">PLAY</button>
+        </div>
+      </div>
+
+      <div style="margin-top:auto; background:#020617; border-top:1px solid #162544; padding:12px 16px; display:flex; justify-content:space-between; align-items:center;">
+        <span style="color:#f59e0b; font-size:0.75rem; font-weight:800;">🎙️ PIMSLEUR PHASE 1</span>
+        <button style="background:#1e293b; color:#38bdf8; border:1px solid #0891b2; padding:6px 14px; border-radius:6px; font-weight:700; font-size:0.75rem;">SWITCH CONSOLE ➔</button>
+      </div>
+    `
+  },
+
+  3: {
+    className: 'theme-gamified-duo',
+    html: `
+      <div class="gamified-header">
+        <div class="streak-pill">
+          <span>🔥</span>
+          <span>DAY 1 STREAK</span>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <span style="background:#1e293b; color:#38bdf8; font-weight:800; padding:6px 10px; border-radius:12px; font-size:0.8rem;">💎 150 XP</span>
+          <span style="background:#1e293b; color:#22c55e; font-weight:800; padding:6px 10px; border-radius:12px; font-size:0.8rem;">❤️ 5</span>
+        </div>
+      </div>
+
+      <div class="xp-banner">
+        <div>
+          <div style="font-size:0.75rem; font-weight:800; color:#bbf7d0;">MISSION DAY 01</div>
+          <div style="font-size:1.15rem; font-weight:800; margin-top:2px;">First Contact & Greetings</div>
+          <div style="font-size:0.78rem; color:#dcfce7; margin-top:4px;">100 Indonesian Power Phrases</div>
+        </div>
+        <div style="background:#fff; color:#15803d; width:44px; height:44px; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:1.2rem; font-weight:800;">🎯</div>
+      </div>
+
+      <div style="padding:0 16px; display:flex; gap:6px; margin-top:4px; overflow-x:auto;">
+        <span style="background:#3b82f6; color:#fff; padding:6px 14px; border-radius:14px; font-size:0.78rem; font-weight:800; white-space:nowrap;">Wave 1 (1-20)</span>
+        <span style="background:#1e293b; color:#94a3b8; padding:6px 14px; border-radius:14px; font-size:0.78rem; font-weight:800; white-space:nowrap;">Wave 2</span>
+        <span style="background:#1e293b; color:#94a3b8; padding:6px 14px; border-radius:14px; font-size:0.78rem; font-weight:800; white-space:nowrap;">Wave 3</span>
+      </div>
+
+      <div class="game-card">
+        <div>
+          <div style="font-size:1.1rem; font-weight:800; color:#fff;">Selamat pagi</div>
+          <div class="devanagari" style="font-size:0.9rem; color:#38bdf8; font-weight:700;">[ सलामात पागी ]</div>
+          <div style="font-size:0.8rem; color:#94a3b8; margin-top:4px;">Good morning (6 AM - 11 AM)</div>
+        </div>
+        <button style="background:#22c55e; border:none; width:46px; height:46px; border-radius:14px; color:#fff; font-size:1.2rem; box-shadow:0 4px 0 #15803d; cursor:pointer;">🔊</button>
+      </div>
+
+      <div class="game-card">
+        <div>
+          <div style="font-size:1.1rem; font-weight:800; color:#fff;">Selamat siang</div>
+          <div class="devanagari" style="font-size:0.9rem; color:#38bdf8; font-weight:700;">[ सलामात सियांग ]</div>
+          <div style="font-size:0.8rem; color:#94a3b8; margin-top:4px;">Good afternoon (11 AM - 3 PM)</div>
+        </div>
+        <button style="background:#22c55e; border:none; width:46px; height:46px; border-radius:14px; color:#fff; font-size:1.2rem; box-shadow:0 4px 0 #15803d; cursor:pointer;">🔊</button>
+      </div>
+
+      <div class="game-card">
+        <div>
+          <div style="font-size:1.1rem; font-weight:800; color:#fff;">Sama-sama</div>
+          <div class="devanagari" style="font-size:0.9rem; color:#fbbf24; font-weight:700;">[ सामा-सामा ]</div>
+          <div style="font-size:0.8rem; color:#94a3b8; margin-top:4px;">You're welcome (Sanskrit: समान)</div>
+        </div>
+        <button style="background:#22c55e; border:none; width:46px; height:46px; border-radius:14px; color:#fff; font-size:1.2rem; box-shadow:0 4px 0 #15803d; cursor:pointer;">🔊</button>
+      </div>
+
+      <div style="margin-top:auto; background:#1e293b; padding:12px; display:flex; justify-content:space-around; border-top:2px solid #334155;">
+        <span style="font-size:0.75rem; font-weight:800; color:#38bdf8;">⚡ MISSION</span>
+        <span style="font-size:0.75rem; font-weight:800; color:#94a3b8;">🎙️ PIMSLEUR</span>
+        <span style="font-size:0.75rem; font-weight:800; color:#94a3b8;">🏆 LEADERBOARD</span>
+      </div>
+    `
+  },
+
+  4: {
+    className: 'theme-pimsleur-audio',
+    html: `
+      <div style="padding:14px 18px; display:flex; justify-content:space-between; align-items:center;">
+        <div style="font-size:0.75rem; font-weight:800; color:#818cf8; letter-spacing:0.05em;">PIMSLEUR MASTER DECK</div>
+        <span style="background:#1e1b4b; color:#c7d2fe; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:800;">LESSON 01</span>
+      </div>
+
+      <div class="exec-player-hero">
+        <div class="vinyl-disc">
+          <span style="font-size:2.2rem;">🎙️</span>
+        </div>
+        <div style="font-weight:800; font-size:1.15rem; color:#fff;">Dr. Paul Pimsleur Audio Immersion</div>
+        <div style="font-size:0.78rem; color:#94a3b8; margin-top:4px;">Unit 1: First Encounters (30 Minutes)</div>
+        
+        <div class="audio-wave-bar">
+          <div class="audio-progress"></div>
+        </div>
+        <div style="display:flex; justify-content:space-between; width:100%; font-size:0.7rem; color:#64748b;">
+          <span>12:45</span>
+          <span>28:47</span>
+        </div>
+
+        <div style="display:flex; gap:20px; align-items:center; margin-top:14px;">
+          <button style="background:none; border:none; color:#cbd5e1; font-size:1.2rem; cursor:pointer;">⏮️ 15s</button>
+          <button style="background:#4f46e5; border:none; width:54px; height:54px; border-radius:50%; color:#fff; font-size:1.4rem; box-shadow:0 8px 20px rgba(79, 70, 229, 0.4); cursor:pointer;">⏸️</button>
+          <button style="background:none; border:none; color:#cbd5e1; font-size:1.2rem; cursor:pointer;">15s ⏭️</button>
+        </div>
+      </div>
+
+      <div class="exec-tools-tabs">
+        <div class="tool-pill active">🎴 Flashcards</div>
+        <div class="tool-pill">🎯 MCQ</div>
+        <div class="tool-pill">🗣️ Dialogue</div>
+        <div class="tool-pill">📖 Phonics</div>
+      </div>
+
+      <div style="margin:0 16px 14px 16px; background:#12121a; border:1px solid #1f1f2e; border-radius:16px; padding:16px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:0.72rem; color:#818cf8; font-weight:800;">REFLEX TRIGGER #1</span>
+          <span style="font-size:0.7rem; color:#64748b;">Tap to flip 👁️</span>
+        </div>
+        <div style="font-weight:700; font-size:1.05rem; color:#fff; margin-top:8px;">🇬🇧 Excuse me (Sir)</div>
+        <div style="border-top:1px dashed #2d2d3f; margin-top:8px; padding-top:8px;">
+          <div style="font-size:1.15rem; font-weight:800; color:#818cf8;">🇮🇩 Permisi (Pak)</div>
+          <div class="devanagari" style="font-size:0.86rem; color:#cbd5e1;">[ परमीसी पाक ]</div>
+        </div>
+      </div>
+    `
+  }
+};
+
+function switchTheme(id) {
+  // Update left card active states
+  const cards = document.querySelectorAll('.theme-card');
+  cards.forEach((c, idx) => c.classList.toggle('active', idx === (id - 1)));
+
+  // Update Pixel Screen
+  const screen = document.getElementById('pixelScreen');
+  const concept = concepts[id];
+  screen.className = 'pixel-screen ' + concept.className;
+  screen.innerHTML = concept.html;
+}
+
+// Initial Load Concept 1
+switchTheme(1);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "Indonesian Spy Master",
+  "short_name": "IndoMaster",
+  "description": "30-Day Intensive Indonesian Immersion (100 Phrases Daily • 5 Waves)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070a12",
+  "theme_color": "#0284c7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
