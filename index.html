@@ -1,0 +1,6459 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇮🇩 30-Day Master Immersion (100 Daily Phrases • 5 Waves of 20)</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0284c7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&family=Noto+Sans+Devanagari:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070a12;
+    --sidebar: #0b1120;
+    --card: #111a2d;
+    --border: #1e293b;
+    --accent: #38bdf8;
+    --gold: #fbbf24;
+    --emerald: #10b981;
+    --rose: #f43f5e;
+    --purple: #c084fc;
+    --text: #f8fafc;
+    --dim: #94a3b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .app-body-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    min-height: 0;
+  }
+  .hindi, .devanagari { font-family: 'Noto Sans Devanagari', 'Mangal', sans-serif !important; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Left Sidebar: 30 Days Directory */
+  aside {
+    width: 330px;
+    background: var(--sidebar);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  .sidebar-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .sidebar-header h2 {
+    font-size: 1.05rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .days-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .phase-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: var(--gold);
+    margin: 12px 6px 4px 6px;
+    text-transform: uppercase;
+  }
+  .day-nav-item {
+    background: #0d1527;
+    border: 1px solid #1a2638;
+    border-radius: 8px;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .day-nav-item:hover {
+    border-color: var(--accent);
+    background: #131f37;
+  }
+  .day-nav-item.active {
+    border-color: var(--accent);
+    background: #0284c7;
+    color: white;
+  }
+  .day-nav-item.active .day-nav-title,
+  .day-nav-item.active .day-nav-sub {
+    color: white !important;
+  }
+  .day-nav-title { font-size: 0.86rem; font-weight: 700; color: #e2e8f0; }
+  .day-nav-sub { font-size: 0.72rem; color: var(--dim); margin-top: 2px; }
+
+  /* Right Main Content Area */
+  main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+  }
+
+  /* Mission Brief Banner */
+  .mission-header {
+    background: linear-gradient(135deg, #0e172a, #13213c);
+    border: 1px solid #1e3a5f;
+    border-radius: 14px;
+    padding: 20px 24px;
+    position: relative;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  }
+  .mission-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .mission-badge {
+    background: #0284c7;
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+  }
+  .mission-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .mission-desc {
+    font-size: 0.92rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+  }
+
+  /* Sanskrit Memory Hook Rule Box */
+  .rule-box {
+    background: rgba(251, 191, 36, 0.08);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.88rem;
+  }
+  .rule-icon { font-size: 1.3rem; }
+
+  /* Prescribed Study Materials */
+  .study-block {
+    background: #090e18;
+    border: 1px dashed var(--accent);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .study-header {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .study-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+  }
+  .study-item {
+    background: #111a2d;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .study-name {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .study-note { font-size: 0.78rem; color: var(--dim); }
+  .study-link {
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .study-link:hover { text-decoration: underline; }
+
+  /* ================= WAVE NAVIGATION CONTROLLER ================= */
+  .wave-nav-container {
+    background: #0d1527;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .wave-nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .wave-heading {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .wave-badge-count {
+    background: #0284c7;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  .wave-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .btn-wave {
+    background: #162238;
+    border: 1px solid #23354f;
+    color: #94a3b8;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-wave:hover {
+    color: #fff;
+    border-color: var(--accent);
+    background: #1e3152;
+  }
+  .btn-wave.active {
+    background: #0284c7;
+    border-color: #38bdf8;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(2, 132, 199, 0.4);
+  }
+  .btn-wave.all-wave {
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    border-color: #a78bfa;
+    color: #fff;
+  }
+  .btn-wave.all-wave.active {
+    background: linear-gradient(135deg, #9333ea, #7e22ce);
+    border-color: #c084fc;
+    box-shadow: 0 0 14px rgba(168, 85, 247, 0.5);
+  }
+
+  /* Sector Block */
+  .sector-block {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .sector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+  }
+  .sector-title {
+    font-size: 1.08rem;
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .sector-count {
+    font-size: 0.75rem;
+    background: #1e293b;
+    color: var(--accent);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  /* Word Cards Grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+  }
+  .word-card {
+    background: #090e18;
+    border: 1px solid #1a2638;
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .word-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    background: #0f1828;
+  }
+  .word-indo { font-size: 1.15rem; font-weight: 800; color: var(--accent); }
+  .word-hi { font-size: 1rem; font-weight: 700; color: var(--gold); margin-top: 2px; }
+  .word-en { font-size: 0.82rem; color: #cbd5e1; margin-top: 2px; }
+  .word-hook { font-size: 0.74rem; color: var(--dim); margin-top: 2px; }
+
+  .btn-play-mini {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: white;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+    transition: transform 0.1s;
+  }
+  .btn-play-mini:active { transform: scale(0.92); }
+
+  /* DLI Audio Tape */
+  .dli-tape {
+    background: #090e1a;
+    border: 1px dashed var(--accent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  audio { height: 36px; border-radius: 6px; }
+
+  /* Bottom Step Navigation */
+  .nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .btn-step {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn-step.next { background: #0284c7; border-color: var(--accent); }
+  /* Mobile responsiveness */
+  .mobile-menu-btn {
+    display: none;
+    background: #0284c7;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  
+
+  /* Mobile-First Sticky Nav & Drawer Overlay */
+  .mobile-nav-bar {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #0b1120;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .mobile-nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+  }
+  .btn-drawer-toggle {
+    background: #1e293b;
+    color: var(--accent);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .day-dropdown-select {
+    background: #0f172a;
+    color: #fff;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    outline: none;
+    flex: 1;
+    max-width: 200px;
+  }
+  .mobile-nav-arrows {
+    display: flex;
+    gap: 6px;
+  }
+  .btn-nav-arrow {
+    background: #1e293b;
+    color: #fff;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .btn-nav-arrow:active { background: #0284c7; }
+
+  /* 1-Click Offline Sync Banner */
+  .offline-sync-box {
+    background: linear-gradient(135deg, #0d1e38, #091224);
+    border: 1px solid #1e3a5f;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .sync-status-text {
+    font-size: 0.86rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-sync-all {
+    background: linear-gradient(135deg, #059669, #047857);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+    transition: transform 0.1s;
+  }
+  .btn-sync-all:active { transform: scale(0.95); }
+  .sync-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #1e293b;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 6px;
+    display: none;
+  }
+  .sync-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #10b981;
+    transition: width 0.2s;
+  }
+
+  /* Drawer Overlay on Mobile */
+  .drawer-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+  }
+  .drawer-overlay.active { display: block; }
+
+  @media (max-width: 900px) {
+    body { flex-direction: column; }
+    .mobile-nav-bar { display: flex; }
+    aside {
+      position: fixed;
+      top: 0;
+      left: -340px;
+      width: 300px;
+      height: 100vh;
+      z-index: 1001;
+      transition: left 0.25s ease;
+      box-shadow: 4px 0 20px rgba(0,0,0,0.8);
+    }
+    aside.open {
+      left: 0;
+    }
+    main { padding: 12px 10px; }
+    .sidebar-close-btn {
+      display: block !important;
+    }
+  }
+  .sidebar-close-btn {
+    display: none;
+    background: #1e293b;
+    border: none;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+
+  /* Pimsleur Audio Deck & Flashcards */
+  .pimsleur-section {
+    background: linear-gradient(135deg, #131c31, #0c1322);
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .pimsleur-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid #1a2942;
+    padding-bottom: 10px;
+  }
+  .pimsleur-badge {
+    background: #0284c7;
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+  .pimsleur-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .pimsleur-card {
+    background: #090e1a;
+    border: 1px solid #1f2d44;
+    border-radius: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .pimsleur-card:hover {
+    border-color: #38bdf8;
+    background: #0d1627;
+  }
+  .pimsleur-q {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .pimsleur-ans {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: #38bdf8;
+  }
+
+
+  /* Master Platform Header */
+  .platform-header {
+    background: #090e1a;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1002;
+    gap: 12px;
+  }
+  .header-top-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .header-brand-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-menu-drawer {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    background: #111a2d;
+    color: #38bdf8;
+    border: 1px solid #1e3a5f;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+  .btn-menu-drawer:hover {
+    background: #1e293b;
+  }
+  .platform-title-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .platform-title-block h1 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+  }
+  .mode-pill {
+    background: #1e293b;
+    color: #38bdf8;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .mobile-quick-day {
+    display: none;
+    align-items: center;
+    gap: 4px;
+  }
+  .btn-day-arrow {
+    background: #111a2d;
+    color: #38bdf8;
+    border: 1px solid #1e3a5f;
+    border-radius: 6px;
+    padding: 6px 9px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  .btn-day-arrow:active {
+    background: #0284c7;
+    color: #fff;
+  }
+  .day-dropdown-select {
+    background: #0f172a;
+    color: #38bdf8;
+    border: 1px solid #1e3a5f;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    max-width: 145px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .platform-tabs {
+    display: flex;
+    background: #0d1527;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 3px;
+    gap: 4px;
+  }
+  .tab-btn-main {
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 800;
+    font-size: 0.86rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .tab-btn-main.active {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+  }
+
+  /* Mobile Responsive Unified Styling */
+  @media (max-width: 900px) {
+    .platform-header {
+      padding: 8px 10px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+    }
+    .header-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .btn-menu-drawer {
+      display: inline-flex;
+    }
+    .mobile-quick-day {
+      display: flex;
+    }
+    .platform-tabs {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .tab-btn-main {
+      flex: 1;
+      padding: 8px 4px;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    .app-body-wrapper {
+      flex-direction: column !important;
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100vw !important;
+    }
+    aside {
+      position: fixed !important;
+      top: 0 !important;
+      left: -340px !important;
+      width: 300px !important;
+      height: 100vh !important;
+      z-index: 1005 !important;
+      transition: left 0.25s ease !important;
+      box-shadow: 4px 0 25px rgba(0,0,0,0.85) !important;
+      display: flex !important;
+    }
+    aside.open {
+      left: 0 !important;
+    }
+    main {
+      padding: 10px 8px !important;
+      width: 100% !important;
+      max-width: 100vw !important;
+      box-sizing: border-box !important;
+      overflow-x: hidden !important;
+    }
+    .cards-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .mission-header {
+      padding: 14px 12px !important;
+    }
+    .mission-title {
+      font-size: 1.15rem !important;
+    }
+    .wave-tabs {
+      overflow-x: auto;
+      flex-wrap: nowrap !important;
+      padding-bottom: 4px;
+    }
+    .btn-wave {
+      flex-shrink: 0;
+      font-size: 0.78rem !important;
+      padding: 6px 10px !important;
+    }
+  }
+
+  /* ================= MATERIAL YOU (CONCEPT 1) ENHANCEMENTS ================= */
+  :root {
+    --bg: #141218;
+    --sidebar: #1d1b20;
+    --card: #211f26;
+    --border: #36343b;
+    --accent: #d0bcff;
+    --gold: #f2b8b5;
+    --emerald: #34a853;
+    --rose: #f43f5e;
+    --purple: #d0bcff;
+    --text: #e6e1e5;
+    --dim: #cac4d0;
+    --m3-surface-container: #2b2930;
+    --m3-primary-container: #4f378b;
+    --m3-on-primary: #381e72;
+    --m3-primary: #d0bcff;
+  }
+
+  body {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif !important;
+  }
+
+  /* Material You Master Header */
+  .platform-header {
+    background: #141218 !important;
+    border-bottom: 1px solid #2b2930 !important;
+  }
+  .btn-menu-drawer {
+    background: #2b2930 !important;
+    color: #d0bcff !important;
+    border: 1px solid #49454f !important;
+    border-radius: 20px !important;
+  }
+  .mode-pill {
+    background: #4f378b !important;
+    color: #d0bcff !important;
+    border-radius: 12px !important;
+  }
+  .day-dropdown-select {
+    background: #2b2930 !important;
+    color: #d0bcff !important;
+    border: 1px solid #49454f !important;
+    border-radius: 16px !important;
+  }
+  .btn-day-arrow {
+    background: #2b2930 !important;
+    color: #d0bcff !important;
+    border: 1px solid #49454f !important;
+    border-radius: 14px !important;
+  }
+  .platform-tabs {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 24px !important;
+    padding: 4px !important;
+  }
+  .tab-btn-main {
+    border-radius: 20px !important;
+    color: #cac4d0 !important;
+  }
+  .tab-btn-main.active {
+    background: #d0bcff !important;
+    color: #381e72 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 2px 10px rgba(208, 188, 255, 0.3) !important;
+  }
+
+  /* Material You Mission Cards & Boxes */
+  .mission-header {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 28px !important;
+  }
+  .mission-badge {
+    background: #4f378b !important;
+    color: #d0bcff !important;
+    border-radius: 16px !important;
+  }
+  .rule-box {
+    background: #2b2930 !important;
+    border-left: 4px solid #d0bcff !important;
+    border-radius: 18px !important;
+    color: #e6e1e5 !important;
+  }
+  .offline-sync-box {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 22px !important;
+  }
+  .btn-sync-all {
+    background: linear-gradient(135deg, #34a853, #15803d) !important;
+    border-radius: 20px !important;
+  }
+  .study-block {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 22px !important;
+  }
+  .study-item {
+    background: #2b2930 !important;
+    border: 1px solid #49454f !important;
+    border-radius: 16px !important;
+  }
+
+  /* Wave Navigation Controller Material You Pills */
+  .wave-nav-container {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 24px !important;
+  }
+  .btn-wave {
+    background: #2b2930 !important;
+    border: 1px solid #49454f !important;
+    color: #cac4d0 !important;
+    border-radius: 18px !important;
+  }
+  .btn-wave.active {
+    background: #d0bcff !important;
+    border-color: #d0bcff !important;
+    color: #381e72 !important;
+    font-weight: 800 !important;
+  }
+
+  /* Material You Word Cards */
+  .sector-block {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 26px !important;
+    padding: 22px !important;
+  }
+  .sector-title {
+    color: #d0bcff !important;
+  }
+  .word-card {
+    background: #2b2930 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 20px !important;
+    padding: 16px !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+  .word-card:hover {
+    background: #332f38 !important;
+    border-color: #d0bcff !important;
+    transform: translateY(-2px);
+  }
+  .word-indo {
+    color: #fff !important;
+    font-weight: 800 !important;
+    font-size: 1.15rem !important;
+  }
+  .word-hi {
+    color: #d0bcff !important;
+    font-size: 0.92rem !important;
+  }
+  .word-en {
+    color: #cac4d0 !important;
+    font-size: 0.85rem !important;
+  }
+  .word-hook {
+    color: #f2b8b5 !important;
+    font-size: 0.78rem !important;
+    margin-top: 6px !important;
+  }
+  .btn-play-mini {
+    background: #4f378b !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    width: 44px !important;
+    height: 44px !important;
+    box-shadow: 0 4px 12px rgba(79, 55, 139, 0.4) !important;
+  }
+  .btn-play-mini:active {
+    background: #d0bcff !important;
+    color: #381e72 !important;
+  }
+
+  /* DLI Tape Player */
+  .dli-tape {
+    background: #211f26 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 22px !important;
+  }
+
+  /* Aside Sidebar Material You */
+  aside {
+    background: #1d1b20 !important;
+    border-right: 1px solid #36343b !important;
+  }
+  .day-nav-item {
+    background: #2b2930 !important;
+    border: 1px solid #36343b !important;
+    border-radius: 16px !important;
+  }
+  .day-nav-item:hover {
+    background: #332f38 !important;
+    border-color: #d0bcff !important;
+  }
+  .day-nav-item.active {
+    background: #4f378b !important;
+    border-color: #d0bcff !important;
+  }
+
+  /* Pimsleur Suite Material You */
+  .pim-tool-btn {
+    border-radius: 18px !important;
+    background: #2b2930 !important;
+    border: 1px solid #36343b !important;
+    color: #cac4d0 !important;
+  }
+  .pim-tool-btn.active {
+    background: #d0bcff !important;
+    color: #381e72 !important;
+    border-color: #d0bcff !important;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ================= TOP MASTER PLATFORM HEADER ================= -->
+<!-- ================= TOP MASTER PLATFORM HEADER ================= -->
+<header class="platform-header">
+  <div class="header-top-row">
+    <div class="header-brand-group">
+      <button class="btn-menu-drawer" id="btnDrawerOpen" onclick="toggleDrawer(true)" aria-label="Open Navigation Drawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span>Menu</span>
+      </button>
+      <div class="platform-title-block">
+        <h1>🇮🇩 Spy Master</h1>
+        <span class="mode-pill" id="badgeActiveMode">MISSION VAULT</span>
+      </div>
+    </div>
+    
+    <!-- Mobile Fast Day Switcher -->
+    <div class="mobile-quick-day">
+      <button class="btn-day-arrow" onclick="prevDay()" title="Previous Day">◀</button>
+      <select class="day-dropdown-select" id="mobileDaySelect" onchange="selectDay(parseInt(this.value))">
+      </select>
+      <button class="btn-day-arrow" onclick="nextDay()" title="Next Day">▶</button>
+    </div>
+  </div>
+
+  <!-- Segment Mode Toggle Pills -->
+  <div class="platform-tabs">
+    <button class="tab-btn-main active" id="tabBtnMission" onclick="switchPlatformSegment('mission')">
+      ⚡ 100 Phrases Mission
+    </button>
+    <button class="tab-btn-main" id="tabBtnPimsleur" onclick="switchPlatformSegment('pimsleur')">
+      🎙️ Pimsleur Suite (6-in-1)
+    </button>
+  </div>
+</header>
+
+
+<div class="app-body-wrapper">
+<!-- Left Navigation Drawer (All 30 Days) -->
+<aside>
+  
+  <div class="sidebar-header">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h2 style="margin:0;">🧭 30-Day Master</h2>
+      <button class="sidebar-close-btn" onclick="toggleDrawer(false)">✕ Close</button>
+    </div>
+    <div style="font-size: 0.72rem; color: var(--gold); font-weight: 700; margin-top:4px;">⚡ 100 Phrases Daily System</div>
+  </div>
+
+  <div class="days-list" id="sidebarList"></div>
+</aside>
+
+<!-- Right Main Action Stage -->
+
+<!-- Mobile Drawer Backdrop -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="toggleDrawer(false)"></div>
+
+
+
+
+<main>
+  <div id="missionStage" style="display:flex; flex-direction:column; gap:18px;">
+    
+  
+  <!-- Mission Brief -->
+  
+  <!-- 1-Click Offline Downloader Banner -->
+  <div class="offline-sync-box" id="offlineSyncBanner">
+    <div>
+      <div class="sync-status-text" id="syncStatusText">
+        <span>💾 <b>Offline Vault:</b> Tap to download all 30 days audio & data for 100% offline use.</span>
+      </div>
+      <div class="sync-progress-bar" id="syncProgressBar">
+        <div class="sync-progress-fill" id="syncProgressFill"></div>
+      </div>
+    </div>
+    <button class="btn-sync-all" id="btnSyncAll" onclick="downloadAllVaultData()">
+      📥 Download All Offline (1-Click)
+    </button>
+  </div>
+
+  <div class="mission-header">
+    <div class="mission-top">
+      <span class="mission-badge" id="phaseTag">PHASE 1: SURVIVAL FOUNDATION</span>
+      <span class="mono" id="dayTracker" style="font-size: 0.8rem; color: var(--dim);">DAY 01 OF 30</span>
+    </div>
+    <div class="mission-title" id="dayTitle">Day 1: First Contact & Identity Protocol</div>
+    <div class="mission-desc" id="dayDesc">
+      Learn to introduce yourself, establish identity, ask names, and request basic water and assistance.
+    </div>
+  </div>
+
+  <!-- Tactical Secret Formula -->
+  <div class="rule-box">
+    <div class="rule-icon">💡</div>
+    <div>
+      <b style="color: var(--gold);">Today's Sanskrit / Hindi Power Formula:</b>
+      <div id="dayRule" style="margin-top: 2px; color: #f1f5f9;">
+        'Nama' bilkul Hindi 'नाम' jaisa hai!
+      </div>
+    </div>
+  </div>
+
+  <!-- Prescribed Study Material for this Day -->
+  <div class="study-block">
+    <div class="study-header">
+      <span>📚 Today's Prescribed Study Material & Books (1-Click Open)</span>
+    </div>
+    <div class="study-items" id="studyItemsList"></div>
+  </div>
+
+  <!-- ================= WAVE SELECTOR CONTROLLER ================= -->
+  <div class="wave-nav-container">
+    <div class="wave-nav-top">
+      <div class="wave-heading">
+        <span>🌊 Daily 100 Phrases Navigator:</span>
+        <span class="wave-badge-count" id="activeWaveLabel">Wave 1 (Phrases 1 - 20)</span>
+      </div>
+      <div style="font-size: 0.78rem; color: var(--dim);">
+        Choose a 20-phrase wave or view all 100 phrases at once:
+      </div>
+    </div>
+    <div class="wave-tabs" id="waveTabsList">
+      <button class="btn-wave active" onclick="switchWave(0)">🌅 Wave 1 [1-20]</button>
+      <button class="btn-wave" onclick="switchWave(1)">☀️ Wave 2 [21-40]</button>
+      <button class="btn-wave" onclick="switchWave(2)">🌇 Wave 3 [41-60]</button>
+      <button class="btn-wave" onclick="switchWave(3)">🌙 Wave 4 [61-80]</button>
+      <button class="btn-wave" onclick="switchWave(4)">⚡ Wave 5 [81-100]</button>
+      <button class="btn-wave all-wave" onclick="switchWave(-1)">👁️ View All 100 at Once</button>
+      
+    </div>
+  </div>
+
+  <!-- Dynamic Multi-Sector Phrases Container -->
+  <div id="sectorsContainer" style="display: flex; flex-direction: column; gap: 16px;"></div>
+
+  <!-- DLI Tape Stream -->
+  <div class="dli-tape">
+    <div>
+      <div style="font-weight: 700; font-size: 0.92rem; color: var(--accent);" id="tapeTitle">
+        🎧 DLI Military Lesson Tape
+      </div>
+      <div style="font-size: 0.75rem; color: var(--dim);">US Defense Language Institute continuous speed listening review</div>
+    </div>
+    <audio id="tapePlayer" controls preload="metadata">
+      <source id="tapeSource" src="/dli-audio/DLI%20Indonesian%20-%20Track%201.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- Step Navigation Footer -->
+  <div class="nav-footer">
+    <button class="btn-step" onclick="prevDay()">◀ Previous Day</button>
+    <span class="mono" style="font-size: 0.85rem; color: var(--dim);" id="footerCounter">Day 1 of 30</span>
+    <button class="btn-step next" onclick="nextDay()">Next Mission ▶</button>
+  </div>
+
+  </div>
+  
+  <!-- ================= DEDICATED PIMSLEUR 6-IN-1 ACADEMY SUITE ================= -->
+  <div id="pimsleurSuiteStage" style="display:none; flex-direction:column; gap:18px;">
+    
+    <!-- Pimsleur Master Header & Day Selector -->
+    <div style="background:linear-gradient(135deg, #131c31, #0a1120); border:1px solid #38bdf8; border-radius:14px; padding:18px 20px; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+        <span style="background:#0284c7; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 12px; border-radius:12px;" id="pimBadge">PIMSLEUR AUDIO ACADEMY • LESSON 01</span>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:0.82rem; color:#94a3b8; font-weight:700;">Switch Lesson:</span>
+          <select id="pimDayDropdown" onchange="selectPimLesson(parseInt(this.value))" style="background:#0f172a; color:#38bdf8; border:1px solid #38bdf8; border-radius:6px; padding:6px 12px; font-weight:800; font-size:0.88rem; outline:none; cursor:pointer;">
+          </select>
+        </div>
+      </div>
+      <div style="font-size:1.35rem; font-weight:800; color:#fff;" id="pimTitleText">Lesson 1: First Encounters & Language Ability</div>
+      <div style="font-size:0.82rem; color:#94a3b8; margin-top:4px;">
+        Official Dr. Paul Pimsleur graduated interval recall training. Master oral reflexes, interactive conversations, and phonics decoding.
+      </div>
+    </div>
+
+    <!-- Official 30-Min Master Audio Lesson Player -->
+    <div style="background:#0b1325; border:1px dashed #38bdf8; border-radius:12px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+      <div>
+        <div style="font-weight:800; font-size:1.02rem; color:#38bdf8;" id="pimAudioTitle">
+          🔊 Official Pimsleur Lesson 1 Audio Track (30 Minutes)
+        </div>
+        <div style="font-size:0.75rem; color:#94a3b8; margin-top:2px;">
+          Listen, anticipate, and speak Indonesian before native confirmation.
+        </div>
+      </div>
+      <audio id="pimAudioPlayer" controls preload="metadata" style="height:38px; border-radius:6px;">
+        <source id="pimAudioSource" src="/pimsleur-audio/2_5420097699322022172.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- Pimsleur 4 Practice Tools Navigation Bar -->
+    <div style="display:flex; gap:8px; background:#0b1120; border:1px solid #1e293b; border-radius:12px; padding:6px; flex-wrap:wrap;">
+      <button class="pim-tool-btn active" id="btnToolCards" onclick="switchPimTool('cards')">
+        🎴 Audio Flashcards
+      </button>
+      <button class="pim-tool-btn" id="btnToolQuick" onclick="switchPimTool('quick')">
+        🎯 Quick Match (MCQ)
+      </button>
+      <button class="pim-tool-btn" id="btnToolSpeak" onclick="switchPimTool('speak')">
+        🗣️ Speak Easy Roleplay
+      </button>
+      <button class="pim-tool-btn" id="btnToolRead" onclick="switchPimTool('read')">
+        📖 Reading Booklet (PDF)
+      </button>
+    </div>
+
+    <!-- TOOL 1: Flip Flashcards Container -->
+    <div id="pimToolCardsContainer" style="display:block; background:#0d1629; border:1px solid #1e293b; border-radius:12px; padding:18px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+        <span style="font-size:0.95rem; font-weight:800; color:#fbbf24;">🎴 Flashcards Practice (Tap card to Flip & Reveal Indonesian):</span>
+        <button onclick="flipAllPimCards()" style="background:#1e293b; color:#fff; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-weight:700; font-size:0.75rem; cursor:pointer;">Flip All</button>
+      </div>
+      <div id="pimCardsGrid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;"></div>
+    </div>
+
+    <!-- TOOL 2: Quick Match MCQ Container -->
+    <div id="pimToolQuickContainer" style="display:none; background:#0d1629; border:1px solid #1e293b; border-radius:12px; padding:20px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#fbbf24; margin-bottom:4px;">🎯 Quick Match: Test Your Fast Audio Recall</div>
+      <div style="font-size:0.8rem; color:#94a3b8; margin-bottom:16px;">Select the correct translation for the given prompt:</div>
+      <div id="pimQuizQuestions" style="display:flex; flex-direction:column; gap:16px;"></div>
+    </div>
+
+    <!-- TOOL 3: Speak Easy Roleplay Container -->
+    <div id="pimToolSpeakContainer" style="display:none; background:#0d1629; border:1px solid #1e293b; border-radius:12px; padding:20px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#38bdf8; margin-bottom:4px;">🗣️ Speak Easy: Interactive Dialogue Roleplay</div>
+      <div style="font-size:0.8rem; color:#94a3b8; margin-bottom:16px;">Simulate native conversation step-by-step:</div>
+      <div id="pimDialogueBox" style="display:flex; flex-direction:column; gap:10px;"></div>
+    </div>
+
+    <!-- TOOL 4: Reading Booklet Container -->
+    <div id="pimToolReadContainer" style="display:none; background:#0d1629; border:1px solid #1e293b; border-radius:12px; padding:20px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+        <div>
+          <div style="font-size:1.05rem; font-weight:800; color:#10b981;">📖 Phonics Reading Lessons (Simon & Schuster Official Booklet)</div>
+          <div style="font-size:0.78rem; color:#94a3b8;">36-Page Official Reading Guide & Pronunciation Phonics</div>
+        </div>
+        <a href="/pdf/Study_Guides/Indonesian_Phase1_Bklt_2011.pdf" target="_blank" style="background:#059669; color:#fff; text-decoration:none; padding:8px 16px; border-radius:8px; font-weight:800; font-size:0.85rem;">Open Full PDF ↗</a>
+      </div>
+      <div id="pimReadingGrid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-top:14px;"></div>
+    </div>
+
+  </div>
+
+</main>
+</div>
+
+
+<!-- Hidden Dedicated Card Audio Player -->
+<audio id="cardAudio"></audio>
+
+<!-- Load complete 30-Day Heavy Curriculum Data -->
+<script src="/curriculum_data.js"></script>
+<script>
+function toggleDrawer(open) {
+  const aside = document.querySelector('aside');
+  const overlay = document.getElementById('drawerOverlay');
+  if (open) {
+    aside.classList.add('open');
+    overlay.classList.add('active');
+  } else {
+    aside.classList.remove('open');
+    overlay.classList.remove('active');
+  }
+}
+
+function populateMobileDaySelect() {
+  const sel = document.getElementById('mobileDaySelect');
+  if (!sel) return;
+  sel.innerHTML = comprehensive30Days.map((d, idx) => 
+    '<option value="' + idx + '"' + (idx === activeDayIdx ? ' selected' : '') + '>Day ' + d.day + ': ' + d.title.split('(')[0].trim() + '</option>'
+  ).join('');
+}
+
+// Override selectDay to auto-close drawer and update dropdown
+const origSelectDay = selectDay;
+selectDay = function(idx) {
+  activeDayIdx = idx;
+  const sel = document.getElementById('mobileDaySelect');
+  if (sel) sel.value = idx;
+  toggleDrawer(false); // Auto-close drawer on mobile
+  renderSidebar();
+  renderMain();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+// 1-Click Offline Downloader Engine
+async function downloadAllVaultData() {
+  const btn = document.getElementById('btnSyncAll');
+  const status = document.getElementById('syncStatusText');
+  const bar = document.getElementById('syncProgressBar');
+  const fill = document.getElementById('syncProgressFill');
+
+  btn.disabled = true;
+  btn.innerText = '⏳ Syncing Vault...';
+  bar.style.display = 'block';
+
+  try {
+    const res = await fetch('/audio_manifest.json');
+    const audioList = await res.json();
+    const total = audioList.length + 5; // audio files + core files
+    let loaded = 0;
+
+    status.innerHTML = '<span>📥 Downloading native audio files: <b><span id="syncCnt">0</span> / ' + total + '</b></span>';
+
+    const cache = await caches.open('indo-vault-v2');
+
+    // Pre-cache core assets
+    await cache.addAll(['/', '/course_30days.html', '/curriculum_data.js', '/audio_manifest.json', '/manifest.json']);
+    loaded += 5;
+
+    // Cache audios in batches of 10
+    for (let i = 0; i < audioList.length; i += 10) {
+      const batch = audioList.slice(i, i + 10);
+      await Promise.all(batch.map(async (url) => {
+        try {
+          const req = new Request(url);
+          const match = await cache.match(req);
+          if (!match) {
+            const resp = await fetch(req);
+            if (resp.ok) await cache.put(req, resp);
+          }
+        } catch(e) {}
+        loaded++;
+      }));
+
+      const pct = Math.round((loaded / total) * 100);
+      fill.style.width = pct + '%';
+      const cntEl = document.getElementById('syncCnt');
+      if (cntEl) cntEl.innerText = loaded;
+    }
+
+    btn.innerText = '✅ 100% Offline Ready!';
+    btn.style.background = '#10b981';
+    status.innerHTML = '<span style="color:#10b981;">🟢 <b>Vault Offline Synced!</b> All phrases and native audios stored on your device.</span>';
+    localStorage.setItem('indo_vault_synced', 'true');
+  } catch (err) {
+    btn.innerText = '⚠️ Retry Sync';
+    btn.disabled = false;
+    status.innerHTML = '<span style="color:#f43f5e;">❌ Sync failed: ' + err.message + '</span>';
+  }
+}
+
+// Check if already synced
+window.addEventListener('DOMContentLoaded', () => {
+  populateMobileDaySelect();
+  if (localStorage.getItem('indo_vault_synced') === 'true') {
+    const btn = document.getElementById('btnSyncAll');
+    const status = document.getElementById('syncStatusText');
+    if (btn) {
+      btn.innerText = '✅ Offline Ready (Re-Sync)';
+      btn.style.background = '#1e3a5f';
+    }
+    if (status) {
+      status.innerHTML = '<span style="color:#10b981;">🟢 <b>Offline Ready:</b> All audios & lessons are stored in phone memory.</span>';
+    }
+  }
+});
+
+
+
+
+
+
+let activeDayIdx = 0;
+let activeWaveIdx = 0; // 0: Wave 1, 1: Wave 2, 2: Wave 3, 3: Wave 4, 4: Wave 5, -1: All Waves at once
+const cardAudioPlayer = document.getElementById('cardAudio');
+
+function renderSidebar() {
+  const container = document.getElementById('sidebarList');
+  let currentPhase = "";
+  let html = "";
+
+  comprehensive30Days.forEach((d, idx) => {
+    if (d.phase !== currentPhase) {
+      currentPhase = d.phase;
+      html += `<div class="phase-label">${currentPhase}</div>`;
+    }
+    const totalItems = d.sectors.reduce((s, sec) => s + sec.items.length, 0);
+    html += `
+      <div class="day-nav-item ${idx === activeDayIdx ? 'active' : ''}" onclick="selectDay(${idx})">
+        <div>
+          <div class="day-nav-title">Day ${d.day}: ${d.title.split('(')[0]}</div>
+          <div class="day-nav-sub">${totalItems} Phrases • ${d.sectors.length} Sectors</div>
+        </div>
+        <span style="font-size: 0.8rem;">${idx === activeDayIdx ? '▶' : ''}</span>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+function selectDay(idx) {
+  activeDayIdx = idx;
+  renderSidebar();
+  renderMain();
+  document.querySelector('main').scrollTop = 0;
+}
+
+function switchWave(waveIdx) {
+  activeWaveIdx = waveIdx;
+  updateWaveButtons();
+  renderSectors();
+}
+
+function updateWaveButtons() {
+  const buttons = document.querySelectorAll('#waveTabsList .btn-wave');
+  buttons.forEach((btn, idx) => {
+    if (idx === 5) {
+      // All wave button
+      btn.classList.toggle('active', activeWaveIdx === -1);
+    } else {
+      btn.classList.toggle('active', activeWaveIdx === idx);
+    }
+  });
+
+  const labelEl = document.getElementById('activeWaveLabel');
+  if (activeWaveIdx === -1) {
+    labelEl.innerText = "👁️ Showing All 100 Phrases (Full Day Unfolded)";
+    labelEl.style.background = "#7c3aed";
+  } else {
+    const waveNames = ["Wave 1 (Phrases 1 - 20)", "Wave 2 (Phrases 21 - 40)", "Wave 3 (Phrases 41 - 60)", "Wave 4 (Phrases 61 - 80)", "Wave 5 (Phrases 81 - 100)"];
+    labelEl.innerText = waveNames[activeWaveIdx] || `Wave ${activeWaveIdx + 1}`;
+    labelEl.style.background = "#0284c7";
+  }
+}
+
+function renderMain() {
+  const d = comprehensive30Days[activeDayIdx];
+  document.getElementById('phaseTag').innerText = d.phase;
+  document.getElementById('dayTracker').innerText = `DAY ${d.day < 10 ? '0' + d.day : d.day} OF 30`;
+  document.getElementById('dayTitle').innerText = `Day ${d.day}: ${d.title}`;
+  document.getElementById('dayDesc').innerText = d.desc;
+  document.getElementById('dayRule').innerText = d.rule;
+  document.getElementById('tapeTitle').innerText = d.tapeLabel;
+  document.getElementById('footerCounter').innerText = `Day ${d.day} of 30`;
+
+  // Tape player
+  const player = document.getElementById('tapePlayer');
+  player.src = `/dli-audio/${encodeURIComponent(d.tape)}`;
+
+  // Study Materials
+  const studyContainer = document.getElementById('studyItemsList');
+  if (d.studyMaterial && d.studyMaterial.length > 0) {
+    studyContainer.innerHTML = d.studyMaterial.map(sm => `
+      <div class="study-item">
+        <div class="study-name">
+          <span>📖 ${sm.name}</span>
+          <a class="study-link" href="${sm.path}" target="_blank">Open PDF ↗</a>
+        </div>
+        <div class="study-note">${sm.note}</div>
+      </div>
+    `).join('');
+  } else {
+    studyContainer.innerHTML = `
+      <div class="study-item">
+        <div class="study-name">
+          <span>📖 Peace Corps Buku 1-3 & DLI Modules</span>
+          <a class="study-link" href="/pdf/Peace_Corps/Peace_Corps_Buku_1.pdf" target="_blank">Open PDF ↗</a>
+        </div>
+        <div class="study-note">Complete military & diplomatic operational curriculum.</div>
+      </div>
+    `;
+  }
+
+  updateWaveButtons();
+  renderSectors();
+}
+
+function renderSectors() {
+  const d = comprehensive30Days[activeDayIdx];
+  const sectorsContainer = document.getElementById('sectorsContainer');
+
+  // If day has waves defined or sectors
+  // If activeWaveIdx === -1 (All waves at once) -> Show every single sector!
+  // If activeWaveIdx >= 0 -> Show only the sector for that wave (e.g. Sector 1 = Wave 1, Sector 2 = Wave 2, etc.)
+  let sectorsToShow = [];
+
+  if (activeWaveIdx === -1) {
+    // Show all sectors
+    sectorsToShow = d.sectors;
+  } else {
+    if (d.sectors[activeWaveIdx]) {
+      sectorsToShow = [d.sectors[activeWaveIdx]];
+    } else {
+      sectorsToShow = d.sectors; // Fallback
+    }
+  }
+
+  sectorsContainer.innerHTML = sectorsToShow.map((sec, sIdx) => `
+    <div class="sector-block">
+      <div class="sector-header">
+        <div class="sector-title">${sec.title}</div>
+        <span class="sector-count">${sec.items.length} Phrases • ${sec.source || 'Operational Sector'}</span>
+      </div>
+      <div class="cards-grid">
+        ${sec.items.map(it => `
+          <div class="word-card" onclick="playCardAudio('${it.audio}')">
+            <div>
+              <div class="word-indo">${it.indo}</div>
+              <div class="word-hi devanagari">[ ${it.hi} ]</div>
+              <div class="word-en">${it.en}</div>
+              <div class="word-hook">📌 ${it.hook}</div>
+            </div>
+            <button class="btn-play-mini">🔊</button>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function playCardAudio(src) {
+  cardAudioPlayer.src = src;
+  cardAudioPlayer.currentTime = 0;
+  cardAudioPlayer.play().catch(e => console.log('Audio err:', e));
+}
+
+function nextDay() {
+  if (activeDayIdx < comprehensive30Days.length - 1) {
+    selectDay(activeDayIdx + 1);
+  }
+}
+
+function prevDay() {
+  if (activeDayIdx > 0) {
+    selectDay(activeDayIdx - 1);
+  }
+}
+
+// Initial Render
+renderSidebar();
+renderMain();
+populateMobileDaySelect();
+
+// Register Service Worker for 100% Offline Capability
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('Offline Service Worker Registered!', reg.scope))
+      .catch(err => console.log('Service Worker Failed:', err));
+  });
+}
+</script>
+
+
+<script>
+var pimsleurSuiteGlobal = {
+  "1": {
+    "lesson": 1,
+    "title": "First Encounters & Language Ability (पहला संपर्क और भाषा समझ)",
+    "audio": "2_5420097699322022172.mp3",
+    "dialogue": [
+      {
+        "speaker": "A (American)",
+        "en": "Excuse me, miss!",
+        "indo": "Permisi, Nona!",
+        "hi": "पेरमीसी, नोना!"
+      },
+      {
+        "speaker": "B (Indonesian)",
+        "en": "Yes, sir?",
+        "indo": "Ya, Pak?",
+        "hi": "या, पाक?"
+      },
+      {
+        "speaker": "A (American)",
+        "en": "Do you understand English?",
+        "indo": "Apakah Anda mengerti bahasa Inggris?",
+        "hi": "आपाकाह आन्दा मंगेरती बाहासा इंग्रिस?"
+      },
+      {
+        "speaker": "B (Indonesian)",
+        "en": "No, I don't understand.",
+        "indo": "Tidak, saya tidak mengerti.",
+        "hi": "तीदाक, साया तीदाक मंगेरती."
+      },
+      {
+        "speaker": "A (American)",
+        "en": "I understand a little Indonesian.",
+        "indo": "Saya mengerti sedikit bahasa Indonesia.",
+        "hi": "साया मंगेरती सेदीकीत बाहासा इंडोनेशिया."
+      },
+      {
+        "speaker": "B (Indonesian)",
+        "en": "Are you an American?",
+        "indo": "Apakah Anda orang Amerika?",
+        "hi": "आपाकाह आन्दा ओरांग अमेरीका?"
+      },
+      {
+        "speaker": "A (American)",
+        "en": "Yes, miss.",
+        "indo": "Ya, Nona.",
+        "hi": "या, नोना."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Excuse me (ध्यान आकर्षित करना)",
+        "indo": "Permisi",
+        "hi": "पेरमीसी",
+        "hook": "Permisi = Excuse me / Maaf."
+      },
+      {
+        "en": "Sir / Mr.",
+        "indo": "Pak (Bapak)",
+        "hi": "पाक (बापाक)",
+        "hook": "Pak = बड़ों और आदरणीय पुरुषों के लिए संबोधन."
+      },
+      {
+        "en": "Miss / Young lady",
+        "indo": "Nona",
+        "hi": "नोना",
+        "hook": "Nona = युवा महिला / कुंवारी लड़की."
+      },
+      {
+        "en": "Do you understand?",
+        "indo": "Apakah Anda mengerti?",
+        "hi": "आपाकाह आन्दा मंगेरती?",
+        "hook": "Mengerti = समझना. Apakah = क्या."
+      },
+      {
+        "en": "English language",
+        "indo": "Bahasa Inggris",
+        "hi": "बाहासा इंग्रिस",
+        "hook": "Bahasa = संस्कृत भाषा."
+      },
+      {
+        "en": "I (Self)",
+        "indo": "Saya",
+        "hi": "साया",
+        "hook": "Saya = विनम्र और मानक 'मैं'."
+      },
+      {
+        "en": "No / Not",
+        "indo": "Tidak",
+        "hi": "तीदाक",
+        "hook": "Tidak = क्रिया और विशेषण का निषेध."
+      },
+      {
+        "en": "A little",
+        "indo": "Sedikit",
+        "hi": "सेदीकीत",
+        "hook": "Sedikit = थोड़ा सा."
+      },
+      {
+        "en": "Person / People",
+        "indo": "Orang",
+        "hi": "ओरांग",
+        "hook": "Orang = व्यक्ति / इंसान."
+      },
+      {
+        "en": "American",
+        "indo": "Amerika",
+        "hi": "अमेरीका",
+        "hook": "Orang Amerika = अमेरिकी नागरिक."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What is 'Excuse me' in Indonesian?",
+        "options": [
+          "Permisi",
+          "Terima kasih",
+          "Selamat",
+          "Silakan"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What does 'Mengerti' mean?",
+        "options": [
+          "To eat",
+          "To understand",
+          "To speak",
+          "To go"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'A little'?",
+        "options": [
+          "Banyak",
+          "Mahal",
+          "Sedikit",
+          "Bagus"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Which word means 'Language'?",
+        "options": [
+          "Orang",
+          "Bicara",
+          "Kata",
+          "Bahasa"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "A - da",
+        "meaning": "There is / Have"
+      },
+      {
+        "word": "A - pa",
+        "meaning": "What"
+      },
+      {
+        "word": "I - ni",
+        "meaning": "This"
+      },
+      {
+        "word": "I - tu",
+        "meaning": "That"
+      },
+      {
+        "word": "Sa - ya",
+        "meaning": "I / Me"
+      },
+      {
+        "word": "Pa - gi",
+        "meaning": "Morning"
+      },
+      {
+        "word": "Si - ang",
+        "meaning": "Midday"
+      },
+      {
+        "word": "Ma - lam",
+        "meaning": "Night"
+      },
+      {
+        "word": "Ba - ha - sa",
+        "meaning": "Language"
+      },
+      {
+        "word": "Ti - dak",
+        "meaning": "No / Not"
+      }
+    ]
+  },
+  "2": {
+    "lesson": 2,
+    "title": "Greetings, Well-being & Location (कुशल-मंगल और दिशा ज्ञान)",
+    "audio": "2_5420097699322022174.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Good morning, sir!",
+        "indo": "Selamat pagi, Pak!",
+        "hi": "सलामात पागी, पाक!"
+      },
+      {
+        "speaker": "B",
+        "en": "Good morning! How are you?",
+        "indo": "Selamat pagi! Apa kabar?",
+        "hi": "सलामात पागी! आपा काबार?"
+      },
+      {
+        "speaker": "A",
+        "en": "Good news (I am fine), thank you.",
+        "indo": "Kabar baik, terima kasih.",
+        "hi": "काबार बाईक, तरीमा कासीह."
+      },
+      {
+        "speaker": "A",
+        "en": "Where is Jalan Thamrin?",
+        "indo": "Di mana Jalan Thamrin?",
+        "hi": "दी माना जालान थामरिन?"
+      },
+      {
+        "speaker": "B",
+        "en": "It's over there, sir.",
+        "indo": "Di sana, Pak.",
+        "hi": "दी साना, पाक."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Good morning",
+        "indo": "Selamat pagi",
+        "hi": "सलामात पागी",
+        "hook": "Pagi = सुबह."
+      },
+      {
+        "en": "How are you? (What news?)",
+        "indo": "Apa kabar?",
+        "hi": "आपा काबार?",
+        "hook": "Kabar = ख़बर (News)."
+      },
+      {
+        "en": "Fine / Good",
+        "indo": "Baik",
+        "hi": "बाईक",
+        "hook": "Kabar baik = अच्छी ख़बर."
+      },
+      {
+        "en": "Thank you",
+        "indo": "Terima kasih",
+        "hi": "तरीमा कासीह",
+        "hook": "Terima = स्वीकार करना, Kasih = प्रेम."
+      },
+      {
+        "en": "Where (at where)",
+        "indo": "Di mana",
+        "hi": "दी माना",
+        "hook": "Di = में/पर, Mana = कहाँ."
+      },
+      {
+        "en": "Road / Street",
+        "indo": "Jalan",
+        "hi": "जालान",
+        "hook": "Jalan = चलना या सड़क."
+      },
+      {
+        "en": "Over there",
+        "indo": "Di sana",
+        "hi": "दी साना",
+        "hook": "Di sana = वहाँ (दूर)."
+      },
+      {
+        "en": "Over here",
+        "indo": "Di sini",
+        "hi": "दी सीनी",
+        "hook": "Di sini = यहाँ (पास)."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "How do you ask 'How are you?'",
+        "options": [
+          "Apa kabar?",
+          "Di mana?",
+          "Siapa nama?",
+          "Mau apa?"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'Thank you' in Indonesian?",
+        "options": [
+          "Sama-sama",
+          "Terima kasih",
+          "Permisi",
+          "Selamat"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "What does 'Di mana' mean?",
+        "options": [
+          "How much",
+          "Who",
+          "Where",
+          "When"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is 'Street / Road'?",
+        "options": [
+          "Pasar",
+          "Hotel",
+          "Rumah",
+          "Jalan"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Ka - bar",
+        "meaning": "News"
+      },
+      {
+        "word": "Ba - ik",
+        "meaning": "Good / Well"
+      },
+      {
+        "word": "Sa - na",
+        "meaning": "There"
+      },
+      {
+        "word": "Si - ni",
+        "meaning": "Here"
+      },
+      {
+        "word": "Ja - lan",
+        "meaning": "Road / Walk"
+      },
+      {
+        "word": "Te - ri - ma",
+        "meaning": "Receive / Accept"
+      },
+      {
+        "word": "Ka - sih",
+        "meaning": "Affection / Love"
+      },
+      {
+        "word": "No - na",
+        "meaning": "Miss"
+      },
+      {
+        "word": "Ba - pak",
+        "meaning": "Father / Sir"
+      },
+      {
+        "word": "Ma - na",
+        "meaning": "Where / Which"
+      }
+    ]
+  },
+  "3": {
+    "lesson": 3,
+    "title": "Food, Drink & Dining Out (खान-पान और रेस्टोरेंट)",
+    "audio": "2_5420097699322022178.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Are you hungry?",
+        "indo": "Apakah Anda lapar?",
+        "hi": "आपाकाह आन्दा लापार?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I want to eat something.",
+        "indo": "Ya, saya mau makan sesuatu.",
+        "hi": "या, साया माउ माकान सेसुआतू."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do you want to eat?",
+        "indo": "Mau makan di mana?",
+        "hi": "माउ माकान दी माना?"
+      },
+      {
+        "speaker": "B",
+        "en": "At the hotel restaurant.",
+        "indo": "Di restoran hotel.",
+        "hi": "दी रेस्टोरान होटेल."
+      },
+      {
+        "speaker": "A",
+        "en": "Do you want to drink tea or coffee?",
+        "indo": "Mau minum teh atau kopi?",
+        "hi": "माउ मिनुम तेह आताउ कोपी?"
+      },
+      {
+        "speaker": "B",
+        "en": "I want drinking water, please.",
+        "indo": "Saya mau minum air.",
+        "hi": "साया माउ मिनुम आइर."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Want / Will (Magical Word)",
+        "indo": "Mau",
+        "hi": "माउ",
+        "hook": "Mau = मुझे चाहिए / मैं चाहता हूँ."
+      },
+      {
+        "en": "To eat",
+        "indo": "Makan",
+        "hi": "माकान",
+        "hook": "Makan = खाना."
+      },
+      {
+        "en": "To drink",
+        "indo": "Minum",
+        "hi": "मिनुम",
+        "hook": "Minum = पीना."
+      },
+      {
+        "en": "Water",
+        "indo": "Air",
+        "hi": "आइर",
+        "hook": "Air = पानी."
+      },
+      {
+        "en": "Tea",
+        "indo": "Teh",
+        "hi": "तेह",
+        "hook": "Teh = चाय."
+      },
+      {
+        "en": "Coffee",
+        "indo": "Kopi",
+        "hi": "कोपी",
+        "hook": "Kopi = कॉफ़ी."
+      },
+      {
+        "en": "Or",
+        "indo": "Atau",
+        "hi": "आताउ",
+        "hook": "Atau = या (Either/Or)."
+      },
+      {
+        "en": "Hungry",
+        "indo": "Lapar",
+        "hi": "लापार",
+        "hook": "Lapar = भूखा."
+      },
+      {
+        "en": "Something",
+        "indo": "Sesuatu",
+        "hi": "सेसुआतू",
+        "hook": "Sesuatu = कुछ."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What is 'To drink'?",
+        "options": [
+          "Minum",
+          "Makan",
+          "Mau",
+          "Tidur"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'Water' in Indonesian?",
+        "options": [
+          "Susu",
+          "Air",
+          "Teh",
+          "Kopi"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Which word means 'To eat'?",
+        "options": [
+          "Beli",
+          "Jalan",
+          "Makan",
+          "Minum"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Atau' mean?",
+        "options": [
+          "And",
+          "With",
+          "Because",
+          "Or"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Ma - kan",
+        "meaning": "Eat"
+      },
+      {
+        "word": "Mi - num",
+        "meaning": "Drink"
+      },
+      {
+        "word": "A - ir",
+        "meaning": "Water"
+      },
+      {
+        "word": "Ko - pi",
+        "meaning": "Coffee"
+      },
+      {
+        "word": "A - tau",
+        "meaning": "Or"
+      },
+      {
+        "word": "La - par",
+        "meaning": "Hungry"
+      },
+      {
+        "word": "Re - sto - ran",
+        "meaning": "Restaurant"
+      },
+      {
+        "word": "Ho - tel",
+        "meaning": "Hotel"
+      },
+      {
+        "word": "Teh",
+        "meaning": "Tea"
+      },
+      {
+        "word": "Mau",
+        "meaning": "Want"
+      }
+    ]
+  },
+  "4": {
+    "lesson": 4,
+    "title": "Shopping & Money (Belanja & Uang)",
+    "audio": "2_5420097699322022185.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 4: Shopping & Money (Belanja & Uang)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "5": {
+    "lesson": 5,
+    "title": "Bargaining & Prices (Tawar Menawar & Harga)",
+    "audio": "2_5420097699322022254.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 5: Bargaining & Prices (Tawar Menawar & Harga)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "6": {
+    "lesson": 6,
+    "title": "Time, Hours & Clock (Jam & Waktu)",
+    "audio": "2_5420097699322022255.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 6: Time, Hours & Clock (Jam & Waktu)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "7": {
+    "lesson": 7,
+    "title": "Daily Appointments (Janji & Hari)",
+    "audio": "2_5420097699322022257.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 7: Daily Appointments (Janji & Hari)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "8": {
+    "lesson": 8,
+    "title": "Taxi & Street Movement (Ojek & Taksi)",
+    "audio": "2_5420097699322022259.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 8: Taxi & Street Movement (Ojek & Taksi)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "9": {
+    "lesson": 9,
+    "title": "Transit, Train & Airport (Stasiun & Bandara)",
+    "audio": "2_5420097699322022261.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 9: Transit, Train & Airport (Stasiun & Bandara)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "10": {
+    "lesson": 10,
+    "title": "Family, Social Relations (Keluarga & Teman)",
+    "audio": "2_5420097699322022262.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 10: Family, Social Relations (Keluarga & Teman)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "11": {
+    "lesson": 11,
+    "title": "Meeting People & Work (Pertemuan & Kerja)",
+    "audio": "2_5420097699322022263.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 11: Meeting People & Work (Pertemuan & Kerja)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "12": {
+    "lesson": 12,
+    "title": "Hotel Check-in & Rooms (Kamar Hotel)",
+    "audio": "2_5420097699322022265.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 12: Hotel Check-in & Rooms (Kamar Hotel)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "13": {
+    "lesson": 13,
+    "title": "Dining Warung Specialties (Makanan Lokal)",
+    "audio": "2_5420097699322022267.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 13: Dining Warung Specialties (Makanan Lokal)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "14": {
+    "lesson": 14,
+    "title": "Ordering Specific Quantities (Jumlah & Porsi)",
+    "audio": "2_5420097699322022268.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 14: Ordering Specific Quantities (Jumlah & Porsi)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "15": {
+    "lesson": 15,
+    "title": "Directions, Left & Right (Kiri & Kanan)",
+    "audio": "2_5420097699322022271.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 15: Directions, Left & Right (Kiri & Kanan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "16": {
+    "lesson": 16,
+    "title": "Distance & Kilometers (Jarak & Kilometer)",
+    "audio": "2_5420097699322022272.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 16: Distance & Kilometers (Jarak & Kilometer)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "17": {
+    "lesson": 17,
+    "title": "Weather, Rain & Travel (Cuaca & Hujan)",
+    "audio": "2_5420097699322022273.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 17: Weather, Rain & Travel (Cuaca & Hujan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "18": {
+    "lesson": 18,
+    "title": "Weekend Plans & Trips (Akhir Pekan)",
+    "audio": "2_5420097699322022276.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 18: Weekend Plans & Trips (Akhir Pekan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "19": {
+    "lesson": 19,
+    "title": "Expressing Needs & Urgent Tasks (Kebutuhan Penting)",
+    "audio": "2_5420097699322022277.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 19: Expressing Needs & Urgent Tasks (Kebutuhan Penting)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "20": {
+    "lesson": 20,
+    "title": "Medical Help & Pharmacy (Apotek & Sakit)",
+    "audio": "2_5420097699322022278.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 20: Medical Help & Pharmacy (Apotek & Sakit)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "21": {
+    "lesson": 21,
+    "title": "Money Exchange & ATM (Tukar Uang & Bank)",
+    "audio": "2_5420097699322022283.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 21: Money Exchange & ATM (Tukar Uang & Bank)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "22": {
+    "lesson": 22,
+    "title": "Shopping Clothes & Sizes (Ukuran Baju)",
+    "audio": "2_5420097699322022285.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 22: Shopping Clothes & Sizes (Ukuran Baju)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "23": {
+    "lesson": 23,
+    "title": "Expressing Likes & Opinions (Suka & Pendapat)",
+    "audio": "2_5420097699322022286.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 23: Expressing Likes & Opinions (Suka & Pendapat)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "24": {
+    "lesson": 24,
+    "title": "Telephone & Mobile Chat (Telepon & WhatsApp)",
+    "audio": "2_5420097699322022289.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 24: Telephone & Mobile Chat (Telepon & WhatsApp)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "25": {
+    "lesson": 25,
+    "title": "Household & Neighborhood (Rumah & Tetangga)",
+    "audio": "2_5420097699322022337.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 25: Household & Neighborhood (Rumah & Tetangga)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "26": {
+    "lesson": 26,
+    "title": "Indonesian Customs & Etiquette (Sopan Santun)",
+    "audio": "2_5420097699322022338.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 26: Indonesian Customs & Etiquette (Sopan Santun)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "27": {
+    "lesson": 27,
+    "title": "Slang vs Formal Speech (Bahasa Gaul)",
+    "audio": "2_5420097699322022340.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 27: Slang vs Formal Speech (Bahasa Gaul)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "28": {
+    "lesson": 28,
+    "title": "Business & Work Collaboration (Kerjasama)",
+    "audio": "2_5420097699322022347.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 28: Business & Work Collaboration (Kerjasama)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "29": {
+    "lesson": 29,
+    "title": "Expressing Feelings & Emotions (Perasaan)",
+    "audio": "2_5420097699322022352.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 29: Expressing Feelings & Emotions (Perasaan)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  },
+  "30": {
+    "lesson": 30,
+    "title": "Deep Master Fluency Review (Kefasihan Total)",
+    "audio": "2_5420097699322022354.mp3",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "en": "Dialogue practice for Day 30: Deep Master Fluency Review (Kefasihan Total)",
+        "indo": "Bisa bicara bahasa Indonesia?",
+        "hi": "बीसा बीचारा बाहासा इंडोनेशिया?"
+      },
+      {
+        "speaker": "B",
+        "en": "Yes, I can speak a little.",
+        "indo": "Ya, saya bisa bicara sedikit.",
+        "hi": "या, साया बीसा बीचारा सेदीकीत."
+      },
+      {
+        "speaker": "A",
+        "en": "Where do we go now?",
+        "indo": "Mau ke mana sekarang?",
+        "hi": "माउ के माना सेकारांग?"
+      },
+      {
+        "speaker": "B",
+        "en": "Let's proceed together.",
+        "indo": "Mari kita pergi bersama.",
+        "hi": "मारी कीता पेरगी बेरसामा."
+      }
+    ],
+    "flashcards": [
+      {
+        "en": "Can / Able to",
+        "indo": "Bisa",
+        "hi": "बीसा",
+        "hook": "Bisa = कर सकना (Capable)."
+      },
+      {
+        "en": "To speak / Talk",
+        "indo": "Bicara",
+        "hi": "बीचारा",
+        "hook": "Bicara = विचार/बोलना (संस्कृत विचार)."
+      },
+      {
+        "en": "Now",
+        "indo": "Sekarang",
+        "hi": "सेकारांग",
+        "hook": "Sekarang = अभी / वर्तमान में."
+      },
+      {
+        "en": "We / Us (Inclusive)",
+        "indo": "Kita",
+        "hi": "कीता",
+        "hook": "Kita = हम सब (आप और मैं)."
+      },
+      {
+        "en": "Together",
+        "indo": "Bersama",
+        "hi": "बेरसामा",
+        "hook": "Bersama = साथ-साथ (समान)."
+      },
+      {
+        "en": "To go",
+        "indo": "Pergi",
+        "hi": "पेरगी",
+        "hook": "Pergi = जाना."
+      }
+    ],
+    "quickMatch": [
+      {
+        "q": "What does 'Bisa' mean?",
+        "options": [
+          "Can / Able to",
+          "Cannot",
+          "Want",
+          "Go"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is 'To speak' in Indonesian?",
+        "options": [
+          "Makan",
+          "Bicara",
+          "Minum",
+          "Tidur"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How do you say 'Now'?",
+        "options": [
+          "Nanti",
+          "Kemarin",
+          "Sekarang",
+          "Besok"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What does 'Pergi' mean?",
+        "options": [
+          "To come",
+          "To buy",
+          "To drink",
+          "To go"
+        ],
+        "correct": 3
+      }
+    ],
+    "readingSet": [
+      {
+        "word": "Bi - sa",
+        "meaning": "Can / Able"
+      },
+      {
+        "word": "Bi - ca - ra",
+        "meaning": "Speak"
+      },
+      {
+        "word": "Se - ka - rang",
+        "meaning": "Now"
+      },
+      {
+        "word": "Ki - ta",
+        "meaning": "We / Us"
+      },
+      {
+        "word": "Per - gi",
+        "meaning": "Go"
+      },
+      {
+        "word": "Ber - sa - ma",
+        "meaning": "Together"
+      },
+      {
+        "word": "Ma - ri",
+        "meaning": "Let's / Come"
+      },
+      {
+        "word": "Su - dah",
+        "meaning": "Already"
+      },
+      {
+        "word": "Be - lum",
+        "meaning": "Not yet"
+      },
+      {
+        "word": "La - gi",
+        "meaning": "Again / More"
+      }
+    ]
+  }
+};
+var activePimDay = 1;
+var currentPlatformSegment = 'mission';
+
+function switchPlatformSegment(seg) {
+  currentPlatformSegment = seg;
+  var btnMission = document.getElementById('tabBtnMission');
+  var btnPimsleur = document.getElementById('tabBtnPimsleur');
+  var missionStage = document.getElementById('missionStage');
+  var pimsleurStage = document.getElementById('pimsleurSuiteStage');
+  var badge = document.getElementById('badgeActiveMode');
+
+  if (seg === 'mission') {
+    btnMission.classList.add('active');
+    btnPimsleur.classList.remove('active');
+    if (badge) { badge.innerText = 'MISSION VAULT'; badge.style.color = '#38bdf8'; }
+    if (missionStage) missionStage.style.display = 'flex';
+    if (pimsleurStage) pimsleurStage.style.display = 'none';
+  } else {
+    btnMission.classList.remove('active');
+    btnPimsleur.classList.add('active');
+    if (badge) { badge.innerText = 'PIMSLEUR SUITE'; badge.style.color = '#fbbf24'; }
+    if (missionStage) missionStage.style.display = 'none';
+    if (pimsleurStage) {
+      pimsleurStage.style.display = 'flex';
+      renderPimsleurSuite();
+    }
+  }
+  toggleDrawer(false);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function populatePimDaySelector() {
+  var sel = document.getElementById('pimDayDropdown');
+  if (!sel || !pimsleurSuiteGlobal) return;
+  var html = '';
+  for (var d = 1; d <= 30; d++) {
+    var item = pimsleurSuiteGlobal[d];
+    html += '<option value="' + d + '"' + (d === activePimDay ? ' selected' : '') + '>Lesson ' + d + ': ' + (item ? item.title.split('(')[0] : '') + '</option>';
+  }
+  sel.innerHTML = html;
+}
+
+function selectPimLesson(d) {
+  activePimDay = d;
+  var sel = document.getElementById('pimDayDropdown');
+  if (sel) sel.value = d;
+  renderPimsleurSuite();
+}
+
+function renderPimsleurSuite() {
+  if (!pimsleurSuiteGlobal) return;
+  var dData = pimsleurSuiteGlobal[activePimDay];
+  if (!dData) return;
+
+  document.getElementById('pimBadge').innerText = 'PIMSLEUR AUDIO ACADEMY • LESSON ' + (activePimDay < 10 ? '0' + activePimDay : activePimDay);
+  document.getElementById('pimTitleText').innerText = 'Lesson ' + activePimDay + ': ' + dData.title;
+  document.getElementById('pimAudioTitle').innerText = '🔊 Official Pimsleur Lesson ' + activePimDay + ' Audio Track (30 Minutes)';
+
+  var player = document.getElementById('pimAudioPlayer');
+  var src = document.getElementById('pimAudioSource');
+  if (player && src) {
+    src.src = '/pimsleur-audio/' + dData.audio;
+    player.load();
+  }
+
+  // 1. Flashcards
+  var cardsGrid = document.getElementById('pimCardsGrid');
+  if (cardsGrid) {
+    cardsGrid.innerHTML = dData.flashcards.map(function(fc, idx) {
+      return '<div onclick="this.querySelector(\'.pim-back\').style.display = (this.querySelector(\'.pim-back\').style.display === \'block\' ? \'none\' : \'block\')" style="background:#080d1a; border:1px solid #1e2c44; border-radius:10px; padding:14px; cursor:pointer;">' +
+        '<div style="display:flex; justify-content:space-between; align-items:center;">' +
+          '<span style="font-size:0.75rem; font-weight:800; color:#fbbf24;">CARD #' + (idx + 1) + '</span>' +
+          '<span style="font-size:0.72rem; color:#38bdf8;">Tap to flip 👁️</span>' +
+        '</div>' +
+        '<div style="font-weight:700; font-size:1rem; color:#f8fafc; margin-top:8px;">🇬🇧 ' + fc.en + '</div>' +
+        '<div class="pim-back" style="display:none; border-top:1px dashed #1e3a5f; padding-top:8px; margin-top:8px;">' +
+          '<div style="font-size:1.1rem; font-weight:800; color:#38bdf8;">🇮🇩 ' + fc.indo + '</div>' +
+          '<div class="devanagari" style="font-size:0.86rem; color:#cbd5e1; margin-top:2px;">[ ' + fc.hi + ' ]</div>' +
+          '<div style="font-size:0.75rem; color:#94a3b8; margin-top:6px;">💡 <b>Hook:</b> ' + fc.hook + '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  // 2. Quick Match Quiz
+  var quizBox = document.getElementById('pimQuizQuestions');
+  if (quizBox) {
+    quizBox.innerHTML = dData.quickMatch.map(function(q, qIdx) {
+      return '<div style="background:#080d18; border:1px solid #1e293b; border-radius:10px; padding:14px;">' +
+        '<div style="font-weight:800; font-size:0.95rem; color:#fff; margin-bottom:10px;">' + (qIdx + 1) + '. ' + q.q + '</div>' +
+        '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:8px;">' +
+          q.options.map(function(opt, optIdx) {
+            return '<button onclick="checkQuizAnswer(this, ' + (optIdx === q.correct) + ')" style="background:#111a2d; color:#cbd5e1; border:1px solid #334155; padding:10px; border-radius:6px; font-weight:700; text-align:left; cursor:pointer;">' + opt + '</button>';
+          }).join('') +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  // 3. Speak Easy Dialogue
+  var dlgBox = document.getElementById('pimDialogueBox');
+  if (dlgBox) {
+    dlgBox.innerHTML = dData.dialogue.map(function(d) {
+      var isA = d.speaker.indexOf('A') === 0;
+      return '<div style="display:flex; flex-direction:column; align-items:' + (isA ? 'flex-start' : 'flex-end') + '; margin-bottom:8px;">' +
+        '<span style="font-size:0.75rem; color:#94a3b8; margin-bottom:2px;">' + d.speaker + '</span>' +
+        '<div style="background:' + (isA ? '#111a2d' : '#0284c7') + '; color:#fff; padding:10px 14px; border-radius:10px; max-width:85%; border:1px solid ' + (isA ? '#1e293b' : '#38bdf8') + ';">' +
+          '<div style="font-weight:800; font-size:0.95rem;">🇮🇩 ' + d.indo + '</div>' +
+          '<div class="devanagari" style="font-size:0.8rem; color:' + (isA ? '#cbd5e1' : '#e0f2fe') + ';">[ ' + d.hi + ' ]</div>' +
+          '<div style="font-size:0.82rem; color:' + (isA ? '#94a3b8' : '#dbeafe') + '; margin-top:4px;">🇬🇧 ' + d.en + '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  // 4. Reading Phonics
+  var rGrid = document.getElementById('pimReadingGrid');
+  if (rGrid) {
+    rGrid.innerHTML = dData.readingSet.map(function(r) {
+      return '<div style="background:#080d18; border:1px solid #1e293b; border-radius:8px; padding:12px; text-align:center;">' +
+        '<div style="font-size:1.15rem; font-weight:800; color:#10b981;">' + r.word + '</div>' +
+        '<div style="font-size:0.78rem; color:#94a3b8; margin-top:2px;">' + r.meaning + '</div>' +
+      '</div>';
+    }).join('');
+  }
+}
+
+function switchPimTool(tool) {
+  var tools = ['cards', 'quick', 'speak', 'read'];
+  tools.forEach(function(t) {
+    var c = document.getElementById('pimTool' + t.charAt(0).toUpperCase() + t.slice(1) + 'Container');
+    var b = document.getElementById('btnTool' + t.charAt(0).toUpperCase() + t.slice(1));
+    if (t === tool) {
+      if (c) c.style.display = 'block';
+      if (b) b.classList.add('active');
+    } else {
+      if (c) c.style.display = 'none';
+      if (b) b.classList.remove('active');
+    }
+  });
+}
+
+function flipAllPimCards() {
+  var backs = document.querySelectorAll('.pim-back');
+  var anyHidden = false;
+  backs.forEach(function(b) { if (b.style.display !== 'block') anyHidden = true; });
+  backs.forEach(function(b) { b.style.display = anyHidden ? 'block' : 'none'; });
+}
+
+function checkQuizAnswer(btn, isCorrect) {
+  if (isCorrect) {
+    btn.style.background = '#059669';
+    btn.style.borderColor = '#10b981';
+    btn.style.color = '#fff';
+    btn.innerText += ' ✅ Correct!';
+  } else {
+    btn.style.background = '#e11d48';
+    btn.style.borderColor = '#f43f5e';
+    btn.style.color = '#fff';
+    btn.innerText += ' ❌ Try again';
+  }
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  populatePimDaySelector();
+});
+</script>
+
+</body>
+</html>
