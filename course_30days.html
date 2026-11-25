@@ -1364,7 +1364,7 @@ async function downloadAllVaultData() {
 
     status.innerHTML = '<span>📥 Downloading native audio files: <b><span id="syncCnt">0</span> / ' + total + '</b></span>';
 
-    const cache = await caches.open('indo-vault-v2');
+    const cache = await caches.open('indo-vault-v3');
 
     // Pre-cache core assets
     const coreAssets = ['./', 'index.html', 'curriculum_data.js', 'audio_manifest.json'];
@@ -1573,7 +1573,7 @@ function renderSectors() {
               <div class="word-en">${it.en}</div>
               <div class="word-hook">📌 ${it.hook}</div>
             </div>
-            <button class="btn-play-mini">🔊</button>
+            <button class="btn-play-mini" style="pointer-events:none;">🔊</button>
           </div>
         `).join('')}
       </div>
@@ -1581,15 +1581,34 @@ function renderSectors() {
   `).join('');
 }
 
-function playCardAudio(src) {
+async function playCardAudio(src) {
   if (!src) return;
-  var cleanSrc = src;
-  if (cleanSrc.indexOf('/native-audio/') !== -1) {
-    cleanSrc = cleanSrc.replace('/native-audio/', 'native_audio/');
-  } else if (cleanSrc.charAt(0) === '/') {
-    cleanSrc = cleanSrc.substring(1);
+  var filename = src.split('/').pop();
+  var relativeUrl = 'native_audio/' + filename;
+
+  try {
+    // 1. Try to fetch from offline cache directly to guarantee offline instant playback
+    if ('caches' in window) {
+      var cache = await caches.open('indo-vault-v3');
+      var match = await cache.match(relativeUrl);
+      if (!match) match = await cache.match('/' + relativeUrl);
+      if (!match) match = await cache.match(src);
+      
+      if (match) {
+        var blob = await match.blob();
+        var blobUrl = URL.createObjectURL(blob);
+        cardAudioPlayer.src = blobUrl;
+        cardAudioPlayer.currentTime = 0;
+        cardAudioPlayer.play().catch(function(e) { console.warn('Blob audio play failed:', e); });
+        return;
+      }
+    }
+  } catch(err) {
+    console.warn('Cache lookup error, falling back to direct URL:', err);
   }
-  cardAudioPlayer.src = cleanSrc;
+
+  // 2. Direct network / relative URL playback
+  cardAudioPlayer.src = relativeUrl;
   cardAudioPlayer.currentTime = 0;
   var p = cardAudioPlayer.play();
   if (p !== undefined) {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'indo-vault-v2';
+const CACHE_NAME = 'indo-vault-v3';
 const CORE_ASSETS = [
   './',
   'index.html',
@@ -59,6 +59,9 @@ self.addEventListener('fetch', (e) => {
         }
         return networkResponse;
       }).catch(() => {
+        if (e.request.destination === 'audio' || e.request.url.includes('.mp3')) {
+          return new Response('', { status: 404, statusText: 'Not Found' });
+        }
         return caches.match('./');
       });
     })
