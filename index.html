@@ -1294,7 +1294,7 @@
           <div style="font-size:1.05rem; font-weight:800; color:#10b981;">📖 Phonics Reading Lessons (Simon & Schuster Official Booklet)</div>
           <div style="font-size:0.78rem; color:#94a3b8;">36-Page Official Reading Guide & Pronunciation Phonics</div>
         </div>
-        <a href="/pdf/Study_Guides/Indonesian_Phase1_Bklt_2011.pdf" target="_blank" style="background:#059669; color:#fff; text-decoration:none; padding:8px 16px; border-radius:8px; font-weight:800; font-size:0.85rem;">Open Full PDF ↗</a>
+        <a href="Study_Guides/Indonesian_Phase1_Bklt_2011.pdf" target="_blank" style="background:#059669; color:#fff; text-decoration:none; padding:8px 16px; border-radius:8px; font-weight:800; font-size:0.85rem;">Open Full PDF ↗</a>
       </div>
       <div id="pimReadingGrid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; margin-top:14px;"></div>
     </div>
@@ -1365,7 +1365,7 @@ async function downloadAllVaultData() {
     const cache = await caches.open('indo-vault-v2');
 
     // Pre-cache core assets
-    await cache.addAll(['/', '/course_30days.html', '/curriculum_data.js', '/audio_manifest.json', '/manifest.json']);
+    await cache.addAll(['./', 'index.html', 'course_30days.html', 'curriculum_data.js', 'audio_manifest.json', 'manifest.json']);
     loaded += 5;
 
     // Cache audios in batches of 10
@@ -1497,7 +1497,7 @@ function renderMain() {
 
   // Tape player
   const player = document.getElementById('tapePlayer');
-  player.src = `/dli-audio/${encodeURIComponent(d.tape)}`;
+  player.src = `dli_audio/${encodeURIComponent(d.tape)}`;
 
   // Study Materials
   const studyContainer = document.getElementById('studyItemsList');
@@ -1516,7 +1516,7 @@ function renderMain() {
       <div class="study-item">
         <div class="study-name">
           <span>📖 Peace Corps Buku 1-3 & DLI Modules</span>
-          <a class="study-link" href="/pdf/Peace_Corps/Peace_Corps_Buku_1.pdf" target="_blank">Open PDF ↗</a>
+          <a class="study-link" href="Peace_Corps/Peace_Corps_Buku_1.pdf" target="_blank">Open PDF ↗</a>
         </div>
         <div class="study-note">Complete military & diplomatic operational curriculum.</div>
       </div>
@@ -1555,7 +1555,7 @@ function renderSectors() {
       </div>
       <div class="cards-grid">
         ${sec.items.map(it => `
-          <div class="word-card" onclick="playCardAudio('${it.audio}')">
+          <div class="word-card" onclick="playCardAudio('${it.audio}', '${(it.indo || '').replace(/'/g, \"\\\'\")}')">
             <div>
               <div class="word-indo">${it.indo}</div>
               <div class="word-hi devanagari">[ ${it.hi} ]</div>
@@ -1570,10 +1570,34 @@ function renderSectors() {
   `).join('');
 }
 
-function playCardAudio(src) {
-  cardAudioPlayer.src = src;
-  cardAudioPlayer.currentTime = 0;
-  cardAudioPlayer.play().catch(e => console.log('Audio err:', e));
+function playCardAudio(src, textFallback) {
+  if (!src && !textFallback) return;
+  // Normalize path: handle relative paths on GitHub Pages
+  var cleanSrc = src ? src.replace(/^\//, '').replace(/^native-audio\//, 'native_audio/').replace(/^dli-audio\//, 'dli_audio/') : '';
+  
+  if (cleanSrc) {
+    cardAudioPlayer.src = cleanSrc;
+    cardAudioPlayer.currentTime = 0;
+    var playPromise = cardAudioPlayer.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(function(err) {
+        console.warn('Audio element play failed, falling back to SpeechSynthesis:', err);
+        if (textFallback) speakIndonesian(textFallback);
+      });
+    }
+  } else if (textFallback) {
+    speakIndonesian(textFallback);
+  }
+}
+
+function speakIndonesian(text) {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'id-ID';
+    utter.rate = 0.9;
+    window.speechSynthesis.speak(utter);
+  }
 }
 
 function nextDay() {
@@ -6348,7 +6372,7 @@ function renderPimsleurSuite() {
   var player = document.getElementById('pimAudioPlayer');
   var src = document.getElementById('pimAudioSource');
   if (player && src) {
-    src.src = '/pimsleur-audio/' + dData.audio;
+    src.src = 'pimsleur_audio/' + dData.audio;
     player.load();
   }
 
