@@ -1201,7 +1201,7 @@
       <div style="font-size: 0.75rem; color: var(--dim);">US Defense Language Institute continuous speed listening review</div>
     </div>
     <audio id="tapePlayer" controls preload="metadata">
-      <source id="tapeSource" src="/dli-audio/DLI%20Indonesian%20-%20Track%201.mp3" type="audio/mpeg">
+      <source id="tapeSource" src="dli_audio/DLI%20Indonesian%20-%20Track%201.mp3" type="audio/mpeg">
     </audio>
   </div>
 
@@ -1244,7 +1244,7 @@
         </div>
       </div>
       <audio id="pimAudioPlayer" controls preload="metadata" style="height:38px; border-radius:6px;">
-        <source id="pimAudioSource" src="/pimsleur-audio/2_5420097699322022172.mp3" type="audio/mpeg">
+        <source id="pimAudioSource" src="pimsleur_audio/2_5420097699322022172.mp3" type="audio/mpeg">
       </audio>
     </div>
 
@@ -1497,7 +1497,7 @@ function renderMain() {
 
   // Tape player
   const player = document.getElementById('tapePlayer');
-  player.src = `/dli-audio/${encodeURIComponent(d.tape)}`;
+  player.src = `dli_audio/${encodeURIComponent(d.tape)}`;
 
   // Study Materials
   const studyContainer = document.getElementById('studyItemsList');
@@ -6360,7 +6360,7 @@ function renderPimsleurSuite() {
   var player = document.getElementById('pimAudioPlayer');
   var src = document.getElementById('pimAudioSource');
   if (player && src) {
-    src.src = '/pimsleur-audio/' + dData.audio;
+    src.src = 'pimsleur_audio/' + dData.audio;
     player.load();
   }
 
