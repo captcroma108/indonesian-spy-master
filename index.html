@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🇮🇩 30-Day Master Immersion (100 Daily Phrases • 5 Waves of 20)</title>
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0284c7">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1309,7 +1309,7 @@
 <audio id="cardAudio"></audio>
 
 <!-- Load complete 30-Day Heavy Curriculum Data -->
-<script src="/curriculum_data.js"></script>
+<script src="curriculum_data.js"></script>
 <script>
 function toggleDrawer(open) {
   const aside = document.querySelector('aside');
@@ -1355,7 +1355,7 @@ async function downloadAllVaultData() {
   bar.style.display = 'block';
 
   try {
-    const res = await fetch('/audio_manifest.json');
+    const res = await fetch('audio_manifest.json');
     const audioList = await res.json();
     const total = audioList.length + 5; // audio files + core files
     let loaded = 0;
@@ -1596,7 +1596,7 @@ populateMobileDaySelect();
 // Register Service Worker for 100% Offline Capability
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('sw.js')
       .then(reg => console.log('Offline Service Worker Registered!', reg.scope))
       .catch(err => console.log('Service Worker Failed:', err));
   });
