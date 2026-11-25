@@ -1571,9 +1571,21 @@ function renderSectors() {
 }
 
 function playCardAudio(src) {
-  cardAudioPlayer.src = src;
+  if (!src) return;
+  var cleanSrc = src;
+  if (cleanSrc.indexOf('/native-audio/') !== -1) {
+    cleanSrc = cleanSrc.replace('/native-audio/', 'native_audio/');
+  } else if (cleanSrc.charAt(0) === '/') {
+    cleanSrc = cleanSrc.substring(1);
+  }
+  cardAudioPlayer.src = cleanSrc;
   cardAudioPlayer.currentTime = 0;
-  cardAudioPlayer.play().catch(e => console.log('Audio err:', e));
+  var p = cardAudioPlayer.play();
+  if (p !== undefined) {
+    p.catch(function(err) {
+      console.warn('Audio playback error:', err);
+    });
+  }
 }
 
 function nextDay() {
