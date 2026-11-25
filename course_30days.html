@@ -1586,31 +1586,39 @@ async function playCardAudio(src) {
   var filename = src.split('/').pop();
   var relativeUrl = 'native_audio/' + filename;
 
+  // Use a global single audio instance or create one on the fly
+  if (!window.activeWordAudio) {
+    window.activeWordAudio = new Audio();
+  }
+  var player = window.activeWordAudio;
+
   try {
-    // 1. Try to fetch from offline cache directly to guarantee offline instant playback
     if ('caches' in window) {
       var cache = await caches.open('indo-vault-v3');
       var match = await cache.match(relativeUrl);
       if (!match) match = await cache.match('/' + relativeUrl);
       if (!match) match = await cache.match(src);
-      
+
       if (match) {
         var blob = await match.blob();
         var blobUrl = URL.createObjectURL(blob);
-        cardAudioPlayer.src = blobUrl;
-        cardAudioPlayer.currentTime = 0;
-        cardAudioPlayer.play().catch(function(e) { console.warn('Blob audio play failed:', e); });
+        player.src = blobUrl;
+        player.currentTime = 0;
+        var bp = player.play();
+        if (bp !== undefined) {
+          bp.catch(function(e) { console.warn('Blob audio play failed:', e); });
+        }
         return;
       }
     }
   } catch(err) {
-    console.warn('Cache lookup error, falling back to direct URL:', err);
+    console.warn('Cache lookup err:', err);
   }
 
-  // 2. Direct network / relative URL playback
-  cardAudioPlayer.src = relativeUrl;
-  cardAudioPlayer.currentTime = 0;
-  var p = cardAudioPlayer.play();
+  // Network / relative fallback
+  player.src = relativeUrl;
+  player.currentTime = 0;
+  var p = player.play();
   if (p !== undefined) {
     p.catch(function(err) {
       console.warn('Audio playback error:', err);
