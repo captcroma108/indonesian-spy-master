@@ -1,11 +1,11 @@
 const CACHE_NAME = 'indo-vault-v2';
 const CORE_ASSETS = [
-  './',
-  'index.html',
-  'course_30days.html',
-  'curriculum_data.js',
-  'manifest.json',
-  'audio_manifest.json'
+  '/',
+  '/index.html',
+  '/course_30days.html',
+  '/curriculum_data.js',
+  '/manifest.json',
+  '/audio_manifest.json'
 ];
 
 self.addEventListener('install', (e) => {
@@ -41,7 +41,7 @@ self.addEventListener('fetch', (e) => {
           return networkResponse;
         }
         // Cache audio and pages on the fly
-        const shouldCache = e.request.url.includes('native_audio/') || e.request.url.includes('native-audio/') || 
+        const shouldCache = e.request.url.includes('/native-audio/') || 
                             e.request.url.includes('/dli-audio/') || 
                             e.request.url.includes('/pdf/') ||
                             e.request.url.includes('.js') ||
@@ -54,7 +54,7 @@ self.addEventListener('fetch', (e) => {
         }
         return networkResponse;
       }).catch(() => {
-        return caches.match('./');
+        return caches.match('/');
       });
     })
   );
