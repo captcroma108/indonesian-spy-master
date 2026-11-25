@@ -1356,17 +1356,32 @@ async function downloadAllVaultData() {
 
   try {
     const res = await fetch('audio_manifest.json');
-    const audioList = await res.json();
-    const total = audioList.length + 5; // audio files + core files
+    if (!res.ok) throw new Error('Failed to load audio manifest');
+    const rawAudioList = await res.json();
+    
+    // Normalize audio list paths for both local and GitHub Pages
+    const audioList = rawAudioList.map(p => {
+      if (p.startsWith('/native-audio/')) return p.replace('/native-audio/', 'native_audio/');
+      if (p.startsWith('/')) return p.substring(1);
+      return p;
+    });
+
+    const total = audioList.length + 4;
     let loaded = 0;
 
     status.innerHTML = '<span>📥 Downloading native audio files: <b><span id="syncCnt">0</span> / ' + total + '</b></span>';
 
     const cache = await caches.open('indo-vault-v2');
 
-    // Pre-cache core assets
-    await cache.addAll(['/', '/course_30days.html', '/curriculum_data.js', '/audio_manifest.json', '/manifest.json']);
-    loaded += 5;
+    // Pre-cache core assets gracefully (one by one so one missing file never breaks the sync)
+    const coreAssets = ['./', 'index.html', 'curriculum_data.js', 'audio_manifest.json'];
+    for (const ca of coreAssets) {
+      try {
+        const resp = await fetch(ca);
+        if (resp && resp.ok) await cache.put(ca, resp);
+      } catch(e) {}
+      loaded++;
+    }
 
     // Cache audios in batches of 10
     for (let i = 0; i < audioList.length; i += 10) {
@@ -1377,7 +1392,7 @@ async function downloadAllVaultData() {
           const match = await cache.match(req);
           if (!match) {
             const resp = await fetch(req);
-            if (resp.ok) await cache.put(req, resp);
+            if (resp && resp.ok) await cache.put(req, resp);
           }
         } catch(e) {}
         loaded++;
@@ -1396,7 +1411,7 @@ async function downloadAllVaultData() {
   } catch (err) {
     btn.innerText = '⚠️ Retry Sync';
     btn.disabled = false;
-    status.innerHTML = '<span style="color:#f43f5e;">❌ Sync failed: ' + err.message + '</span>';
+    status.innerHTML = '<span style="color:#f43f5e;">❌ Sync failed: ' + (err.message || 'Network error') + '</span>';
   }
 }
 

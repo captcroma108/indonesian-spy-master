@@ -1,18 +1,22 @@
 const CACHE_NAME = 'indo-vault-v2';
 const CORE_ASSETS = [
-  '/',
-  '/index.html',
-  '/course_30days.html',
-  '/curriculum_data.js',
-  '/manifest.json',
-  '/audio_manifest.json'
+  './',
+  'index.html',
+  'curriculum_data.js',
+  'manifest.json',
+  'audio_manifest.json'
 ];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
+    caches.open(CACHE_NAME).then(async (cache) => {
       console.log('Pre-caching core assets');
-      return cache.addAll(CORE_ASSETS);
+      for (const a of CORE_ASSETS) {
+        try {
+          const resp = await fetch(a);
+          if (resp && resp.ok) await cache.put(a, resp);
+        } catch(err) {}
+      }
     }).then(() => self.skipWaiting())
   );
 });
@@ -41,9 +45,10 @@ self.addEventListener('fetch', (e) => {
           return networkResponse;
         }
         // Cache audio and pages on the fly
-        const shouldCache = e.request.url.includes('/native-audio/') || 
-                            e.request.url.includes('/dli-audio/') || 
-                            e.request.url.includes('/pdf/') ||
+        const shouldCache = e.request.url.includes('native_audio/') || 
+                            e.request.url.includes('native-audio/') || 
+                            e.request.url.includes('dli_audio/') || 
+                            e.request.url.includes('pimsleur_audio/') || 
                             e.request.url.includes('.js') ||
                             e.request.url.includes('.html');
         if (shouldCache) {
@@ -54,7 +59,7 @@ self.addEventListener('fetch', (e) => {
         }
         return networkResponse;
       }).catch(() => {
-        return caches.match('/');
+        return caches.match('./');
       });
     })
   );
