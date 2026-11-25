@@ -1357,14 +1357,7 @@ async function downloadAllVaultData() {
   try {
     const res = await fetch('audio_manifest.json');
     if (!res.ok) throw new Error('Failed to load audio manifest');
-    const rawAudioList = await res.json();
-    
-    // Normalize audio list paths for both local and GitHub Pages
-    const audioList = rawAudioList.map(p => {
-      if (p.startsWith('/native-audio/')) return p.replace('/native-audio/', 'native_audio/');
-      if (p.startsWith('/')) return p.substring(1);
-      return p;
-    });
+    const audioList = await res.json();
 
     const total = audioList.length + 4;
     let loaded = 0;
@@ -1373,7 +1366,7 @@ async function downloadAllVaultData() {
 
     const cache = await caches.open('indo-vault-v2');
 
-    // Pre-cache core assets gracefully (one by one so one missing file never breaks the sync)
+    // Pre-cache core assets
     const coreAssets = ['./', 'index.html', 'curriculum_data.js', 'audio_manifest.json'];
     for (const ca of coreAssets) {
       try {
@@ -1388,11 +1381,14 @@ async function downloadAllVaultData() {
       const batch = audioList.slice(i, i + 10);
       await Promise.all(batch.map(async (url) => {
         try {
-          const req = new Request(url);
-          const match = await cache.match(req);
-          if (!match) {
-            const resp = await fetch(req);
-            if (resp && resp.ok) await cache.put(req, resp);
+          const resp = await fetch(url);
+          if (resp && resp.ok) {
+            // Put in cache under relative path
+            await cache.put(url, resp.clone());
+            // Also put under leading slash path so both match
+            try {
+              await cache.put('/' + url, resp.clone());
+            } catch(e) {}
           }
         } catch(e) {}
         loaded++;
